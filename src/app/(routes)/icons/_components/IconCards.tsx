@@ -2,10 +2,20 @@
 import React, { useState } from 'react';
 import { IconComponent } from '@/types/icon-component';
 import { Button } from '@/components/ui/button';
-import { Download, CopyFile, Checkmark } from '@carbon/icons-react';
+import { Download, CopyFile, Checkmark, Tag } from '@carbon/icons-react';
 import { toast } from 'sonner';
 import { Card } from '@/components/ui/card';
 import JSZip from 'jszip';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import {
+	Pagination,
+	PaginationContent,
+	PaginationItem,
+	PaginationLink,
+	PaginationNext,
+	PaginationPrevious,
+	PaginationEllipsis,
+} from '@/components/ui/pagination';
 
 interface IconCardsProps {
 	icon: IconComponent[];
@@ -15,12 +25,76 @@ const IconCards = ({ icon }: IconCardsProps) => {
 	const [error, setError] = useState<Record<string, boolean>>({});
 	const [copiedIcon, setCopiedIcon] = useState<string | null>(null);
 	const [isDownloading, setIsDownloading] = useState(false);
+	const [currentPage, setCurrentPage] = useState(1);
+
+	// Reset to page 1 whenever the icons array changes (due to search/filter)
+	React.useEffect(() => {
+		setCurrentPage(1);
+	}, [icon.length]);
+
+	// Pagination configuration
+	const itemsPerPage = 24; // 4 columns × 6 rows on large screens
+	const totalPages = Math.ceil(icon.length / itemsPerPage);
+	const startIndex = (currentPage - 1) * itemsPerPage;
+	const endIndex = startIndex + itemsPerPage;
+	const currentIcons = icon.slice(startIndex, endIndex);
 
 	// Handle error for specific icon
 	const handleError = (name: string) => {
 		console.error(`Error rendering icon: ${name}`);
 		setError((prev) => ({ ...prev, [name]: true }));
 	};
+
+	// Pagination handlers
+	const goToPreviousPage = () => {
+		setCurrentPage((prev) => Math.max(prev - 1, 1));
+	};
+
+	const goToNextPage = () => {
+		setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+	};
+
+	const goToPage = (page: number) => {
+		setCurrentPage(page);
+	};
+
+	// Generate page numbers to display
+	const getPageNumbers = () => {
+		const pages = [];
+		const maxVisiblePages = 5;
+
+		if (totalPages <= maxVisiblePages) {
+			// Show all pages if total is small
+			for (let i = 1; i <= totalPages; i++) {
+				pages.push(i);
+			}
+		} else {
+			// Show first page, current page range, and last page with ellipsis
+			const startPage = Math.max(1, currentPage - 2);
+			const endPage = Math.min(totalPages, currentPage + 2);
+
+			if (startPage > 1) {
+				pages.push(1);
+				if (startPage > 2) {
+					pages.push('ellipsis-start');
+				}
+			}
+
+			for (let i = startPage; i <= endPage; i++) {
+				pages.push(i);
+			}
+
+			if (endPage < totalPages) {
+				if (endPage < totalPages - 1) {
+					pages.push('ellipsis-end');
+				}
+				pages.push(totalPages);
+			}
+		}
+
+		return pages;
+	};
+
 	const copySVGToClipboard = async (name: string) => {
 		try {
 			// Find the title div and navigate up to the container
@@ -168,46 +242,30 @@ const IconCards = ({ icon }: IconCardsProps) => {
 			setIsDownloading(true);
 			const zip = new JSZip();
 
-			// Process each icon
-			for (const { name, size } of icon) {
+			// Process each icon (all filtered icons, not just current page)
+			for (const { name, path, width, height } of icon) {
 				try {
-					// Fetch the SVG file directly
-					const response = await fetch(`/icons/health-icons/${name}.svg`);
-					if (!response.ok) {
-						console.error(`Failed to fetch ${name}.svg`);
-						continue;
-					}
+					// Download the SVG files, use the same method as the single download to svg
+					// Use zip.file to add the SVG to the zip
 
-					let svgString = await response.text();
+					const titleDiv = document.querySelector(`div[title="${name}"]`);
+					if (!titleDiv || !titleDiv.parentElement) return;
 
-					// Process the SVG to make it color-changeable
-					const parser = new DOMParser();
-					const svgDoc = parser.parseFromString(svgString, 'image/svg+xml');
-					const svgElement = svgDoc.documentElement;
+					const svgElement = titleDiv.parentElement.querySelector('svg');
+					if (!svgElement) return;
 
-					// Add xmlns if not present
-					if (!svgElement.getAttribute('xmlns')) {
-						svgElement.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-					}
+					const svgClone = svgElement.cloneNode(true) as SVGElement;
+					svgClone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
 
-					// Make SVG color-changeable
-					const paths = svgElement.querySelectorAll('path, circle, rect, line, polyline, polygon');
-					paths.forEach((path) => {
-						if (path.hasAttribute('fill') && path.getAttribute('fill') !== 'none') {
-							path.setAttribute('fill', 'currentColor');
-						}
-						if (path.hasAttribute('stroke') && path.getAttribute('stroke') !== 'none') {
-							path.setAttribute('stroke', 'currentColor');
-						}
-					});
-
-					// Convert back to string
 					const serializer = new XMLSerializer();
-					svgString =
-						'<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' + serializer.serializeToString(svgElement);
+					let svgString =
+						'<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' + serializer.serializeToString(svgClone);
 
-					// Add to zip
-					zip.file(`${name}.svg`, svgString);
+					const svgBlob = new Blob([svgString], { type: 'image/svg+xml' });
+					const url = URL.createObjectURL(svgBlob);
+
+					zip.file(path, svgBlob);
+					URL.revokeObjectURL(url);
 				} catch (err) {
 					console.error(`Error processing icon ${name}:`, err);
 				}
@@ -218,7 +276,7 @@ const IconCards = ({ icon }: IconCardsProps) => {
 			const url = URL.createObjectURL(content);
 			const downloadLink = document.createElement('a');
 			downloadLink.href = url;
-			downloadLink.download = 'health-icons.zip';
+			downloadLink.download = 'icons.zip';
 			document.body.appendChild(downloadLink);
 			downloadLink.click();
 			document.body.removeChild(downloadLink);
@@ -235,7 +293,10 @@ const IconCards = ({ icon }: IconCardsProps) => {
 
 	return (
 		<div className='space-y-4'>
-			<div className='flex justify-end'>
+			<div className='flex justify-between items-center'>
+				<div className='text-sm text-muted-foreground'>
+					Showing {startIndex + 1}-{Math.min(endIndex, icon.length)} of {icon.length} icons
+				</div>
 				<Button
 					variant='outline'
 					className='gap-2'
@@ -245,16 +306,18 @@ const IconCards = ({ icon }: IconCardsProps) => {
 					{isDownloading ? 'Downloading...' : 'Download All'}
 				</Button>
 			</div>
-			<div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-8 gap-1'>
-				{icon.map(({ name, displayName, Component, size }, index) => (
+
+			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8 gap-1'>
+				{currentIcons.map(({ name, displayName, Component, tags }, index) => (
 					<Card
 						key={name + '_' + index}
 						className='relative group flex flex-col items-center justify-center p-4 gap-2 aspect-square rounded-none'>
 						<div className='flex items-center justify-center'>
 							{!error[name] ? (
-								<div style={{ width: size, height: size }}>
+								<div
+									style={{ width: 36, height: 36 }}
+									className='select-none'>
 									<Component
-										size={size}
 										aria-hidden='true'
 										onError={() => handleError(name)}
 									/>
@@ -266,15 +329,38 @@ const IconCards = ({ icon }: IconCardsProps) => {
 							)}
 						</div>
 						<div
-							className='absolute bottom-0 left-0 p-4 text-xs text-center text-secondary-foreground w-full line-clamp-2'
+							className='absolute bottom-0 left-0 p-2 text-xs text-center text-secondary-foreground w-full overflow-hidden'
 							title={displayName}>
-							{displayName.split(/(?=[A-Z])/).map((part, index) => (
-								<span
-									key={index}
-									className='capitalize'>
-									{part + ' '}
-								</span>
-							))}
+							<p className='text-ellipsis overflow-hidden line-clamp-2'>
+								{displayName.split(/(?=[A-Z])/).map((part, index) => (
+									<span
+										key={index}
+										className='capitalize'>
+										{part + ' '}
+									</span>
+								))}
+							</p>
+						</div>
+						<div className='absolute top-2 left-2'>
+							<Tooltip>
+								<TooltipTrigger asChild>
+									<Button
+										variant='ghost'
+										size='icon'
+										className='text-secondary-foreground hover:bg-secondary'>
+										<Tag />
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent
+									side='bottom'
+									align='start'>
+									<div className='flex flex-wrap max-w-32 gap-2 text-xs justify-around select-none'>
+										{tags.map((tag) => (
+											<span key={tag}>{tag}</span>
+										))}
+									</div>
+								</TooltipContent>
+							</Tooltip>
 						</div>
 						<div className='absolute top-2 right-2 lg:hidden group-hover:block'>
 							<Button
@@ -297,6 +383,54 @@ const IconCards = ({ icon }: IconCardsProps) => {
 					</Card>
 				))}
 			</div>
+
+			{/* Pagination Controls */}
+			{totalPages > 1 && (
+				<Pagination className='flex justify-center'>
+					<PaginationContent>
+						<PaginationItem>
+							<PaginationPrevious
+								href='#'
+								onClick={(e) => {
+									e.preventDefault();
+									goToPreviousPage();
+								}}
+								className={currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
+							/>
+						</PaginationItem>
+
+						{getPageNumbers().map((page, index) => (
+							<PaginationItem key={index}>
+								{page === 'ellipsis-start' || page === 'ellipsis-end' ? (
+									<PaginationEllipsis />
+								) : (
+									<PaginationLink
+										href='#'
+										onClick={(e) => {
+											e.preventDefault();
+											goToPage(page as number);
+										}}
+										isActive={currentPage === page}
+										className='cursor-pointer'>
+										{page}
+									</PaginationLink>
+								)}
+							</PaginationItem>
+						))}
+
+						<PaginationItem>
+							<PaginationNext
+								href='#'
+								onClick={(e) => {
+									e.preventDefault();
+									goToNextPage();
+								}}
+								className={currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
+							/>
+						</PaginationItem>
+					</PaginationContent>
+				</Pagination>
+			)}
 		</div>
 	);
 };

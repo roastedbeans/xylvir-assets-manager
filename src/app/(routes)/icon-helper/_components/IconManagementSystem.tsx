@@ -451,6 +451,14 @@ const IconManagementSystem = () => {
 
 	// Update the process icons function to update processed results
 	const processIcons = () => {
+		// Get selected icons to process
+		const selectedIcons = consolidatedIcons.filter((icon) => icon.selected);
+
+		if (selectedIcons.length === 0) {
+			toast.error('No icons selected for processing');
+			return;
+		}
+
 		// Demo progress animation
 		let progress = 0;
 		const interval = setInterval(() => {
@@ -458,6 +466,91 @@ const IconManagementSystem = () => {
 			setProcessProgress(progress);
 			if (progress >= 100) {
 				clearInterval(interval);
+
+				// Apply actual transformations to the selected icons
+				const processedIcons = consolidatedIcons.map((icon) => {
+					if (!icon.selected) return icon;
+
+					let processedIcon = { ...icon };
+
+					// Apply kebab-case transformation if enabled
+					if (processingFeatures.kebabCase && processingFeatures.standardization) {
+						// Convert filename to kebab-case
+						const filenameParts = processedIcon.name.split('.');
+						const extension = filenameParts.pop();
+						const basename = filenameParts.join('.');
+
+						// Convert to kebab-case: replace spaces, underscores, and camelCase with hyphens
+						const kebabName = basename
+							.replace(/([a-z])([A-Z])/g, '$1-$2') // camelCase to kebab-case
+							.replace(/[\s_]+/g, '-') // spaces and underscores to hyphens
+							.replace(/[^a-zA-Z0-9-]/g, '') // remove special characters
+							.toLowerCase()
+							.replace(/-+/g, '-') // collapse multiple hyphens
+							.replace(/^-|-$/g, ''); // trim leading/trailing hyphens
+
+						processedIcon.name = `${kebabName}.${extension}`;
+
+						// Update the path as well
+						const pathParts = processedIcon.path.split('/');
+						pathParts[pathParts.length - 1] = processedIcon.name;
+						processedIcon.path = pathParts.join('/');
+					}
+
+					// Apply prefix if enabled
+					if (processingFeatures.addPrefix && processingFeatures.standardization) {
+						const prefix = 'icon-'; // You could make this configurable
+						if (!processedIcon.name.startsWith(prefix)) {
+							const filenameParts = processedIcon.name.split('.');
+							const extension = filenameParts.pop();
+							const basename = filenameParts.join('.');
+							processedIcon.name = `${prefix}${basename}.${extension}`;
+
+							// Update the path as well
+							const pathParts = processedIcon.path.split('/');
+							pathParts[pathParts.length - 1] = processedIcon.name;
+							processedIcon.path = pathParts.join('/');
+						}
+					}
+
+					// Apply colorization transformations if enabled
+					if (processingFeatures.colorization && processedIcon.content) {
+						let processedContent = processedIcon.content;
+
+						if (processingFeatures.replaceBlack) {
+							// Replace black fills with currentColor
+							processedContent = processedContent
+								.replace(/fill="#000000"/g, 'fill="currentColor"')
+								.replace(/fill="#000"/g, 'fill="currentColor"')
+								.replace(/fill="black"/g, 'fill="currentColor"')
+								.replace(/stroke="#000000"/g, 'stroke="currentColor"')
+								.replace(/stroke="#000"/g, 'stroke="currentColor"')
+								.replace(/stroke="black"/g, 'stroke="currentColor"');
+						}
+
+						if (processingFeatures.removeWhiteBg) {
+							// Remove white backgrounds
+							processedContent = processedContent
+								.replace(/fill="#ffffff"/g, 'fill="none"')
+								.replace(/fill="#fff"/g, 'fill="none"')
+								.replace(/fill="white"/g, 'fill="none"');
+						}
+
+						if (processingFeatures.addRootFill) {
+							// Add fill="currentColor" to root SVG if no fill is present
+							if (!processedContent.includes('fill=') && processedContent.includes('<svg')) {
+								processedContent = processedContent.replace(/<svg([^>]*)>/, '<svg$1 fill="currentColor">');
+							}
+						}
+
+						processedIcon.content = processedContent;
+					}
+
+					return processedIcon;
+				});
+
+				// Update the consolidated icons with processed versions
+				setConsolidatedIcons(processedIcons);
 
 				// Calculate and update processed results
 				const enabledFeatures = Object.entries(processingFeatures)
@@ -471,7 +564,6 @@ const IconManagementSystem = () => {
 				if (processingFeatures.optimization) featuresFormatted.push('Optimization');
 
 				// Calculate total size (simulated)
-				const selectedIcons = consolidatedIcons.filter((icon) => icon.selected);
 				const totalSizeInBytes = selectedIcons.reduce((sum, icon) => {
 					// Extract size in KB and convert back to bytes for calculation
 					const sizeStr = icon.size;

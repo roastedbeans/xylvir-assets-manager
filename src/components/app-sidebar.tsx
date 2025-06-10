@@ -34,36 +34,6 @@ const data = {
 		{
 			title: 'Icons Collection',
 			url: '/icons',
-			items: [
-				{
-					title: 'IBM Icons',
-					url: '/icons/ibm',
-				},
-				{
-					title: 'IBM Pictograms',
-					url: '/icons/ibm-pictograms',
-				},
-				{
-					title: 'Lucide Icons',
-					url: '/icons/lucide',
-				},
-				{
-					title: 'Simple Icons',
-					url: '/icons/simple-icons',
-				},
-				{
-					title: 'Health Icons',
-					url: '/icons/health-icons',
-				},
-				{
-					title: 'Cloud Native Icons',
-					url: '/icons/cloud-native',
-				},
-				{
-					title: 'Flat Icons',
-					url: '/icons/flat',
-				},
-			],
 		},
 		{
 			title: 'Icon Helper',

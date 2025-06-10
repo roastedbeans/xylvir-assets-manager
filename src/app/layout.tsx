@@ -21,8 +21,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'IKWONS',
-	description: 'The icons that matters',
+	title: 'Xylvir Assets Management',
+	description: 'An AI-powered asset manager for your UI and diagrams',
 };
 
 export default function RootLayout({

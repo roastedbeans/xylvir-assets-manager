@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { FolderUp, FileUp, AlertCircle, CheckCircle, AlertTriangle, Upload, Info, ArrowRightIcon } from 'lucide-react';
+import { FolderUp, FileUp, AlertCircle, CheckCircle, AlertTriangle, Upload, Info } from 'lucide-react';
 import { toast } from 'sonner';
-import { CollectionStats, IconObject, ScanLogEntry } from './types';
-import { formatFileSize, estimateSvgDimensions } from './utils';
+import { CollectionStats, IconObject, ScanLogEntry } from '../../../../types/icon-helper-types';
+import { formatFileSize, estimateSvgDimensions } from '@/lib/utils';
 
 interface IconCollectionProps {
 	scanProgress: number;
@@ -35,11 +35,18 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 	onProceedToDisplay,
 }) => {
 	const fileInputRef = useRef<HTMLInputElement>(null);
+	const folderInputRef = useRef<HTMLInputElement>(null);
 	const [isDragging, setIsDragging] = useState(false);
 
-	const handleFolderSelect = () => {
+	const handleFileSelect = () => {
 		if (fileInputRef.current) {
 			fileInputRef.current.click();
+		}
+	};
+
+	const handleFolderSelect = () => {
+		if (folderInputRef.current) {
+			folderInputRef.current.click();
 		}
 	};
 
@@ -63,20 +70,9 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 		e.preventDefault();
 		setIsDragging(false);
 
-		// Check if files were dropped
-		if (e.dataTransfer.items) {
-			const folderEntry = Array.from(e.dataTransfer.items).find((item) => item.webkitGetAsEntry()?.isDirectory);
-
-			if (folderEntry) {
-				// Handle folder drop - this is simplified as webkitGetAsEntry API is complex
-				toast.info('Processing folder...');
-				// In production, you'd process the directory entry recursively
-
-				// For now, just select the folder via the input
-				handleFolderSelect();
-			} else {
-				toast.error('Please drop a folder, not individual files');
-			}
+		// Handle dropped files
+		if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+			collectIcons(e.dataTransfer.files);
 		}
 	}, []);
 
@@ -88,7 +84,6 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 		const files = Array.from(fileList).filter((file) => file.name.toLowerCase().endsWith('.svg'));
 
 		if (files.length === 0) {
-			toast.error('No SVG files found in the selected folder');
 			setIsScanning(false);
 			return;
 		}
@@ -113,10 +108,6 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 					uniqueTags: allTags.size,
 				});
 				setConsolidatedIcons(iconObjects);
-
-				if (iconObjects.length > 0) {
-					toast.success(`Collected ${iconObjects.length} SVG icons with ${allTags.size} unique tags`);
-				}
 				return;
 			}
 
@@ -124,10 +115,13 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 			const progress = Math.floor((index / files.length) * 100);
 			setScanProgress(progress);
 
-			// Extract folder path from webkitRelativePath
-			const pathParts = file.webkitRelativePath.split('/');
-			pathParts.pop(); // Remove filename
-			const folderPath = '/' + pathParts.slice(1).join('/'); // Skip the root folder
+			// Extract folder path from webkitRelativePath or use root for individual files
+			let folderPath = '/';
+			if (file.webkitRelativePath) {
+				const pathParts = file.webkitRelativePath.split('/');
+				pathParts.pop(); // Remove filename
+				folderPath = '/' + pathParts.slice(1).join('/'); // Skip the root folder
+			}
 			folderPaths.add(folderPath);
 
 			// Check for duplicates
@@ -151,7 +145,7 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 			const reader = new FileReader();
 			reader.onload = (event) => {
 				if (event.target && typeof event.target.result === 'string') {
-					const content = event.target.result;
+					let content = event.target.result;
 
 					try {
 						// Validate SVG content
@@ -174,10 +168,10 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 
 						iconObjects.push({
 							name: file.name,
-							folder: folderPath,
+							folder: 'icons',
 							size,
 							dimensions,
-							path: `${folderPath}/${file.name}`,
+							path: `/icons/${file.name}`,
 							content,
 							selected: false,
 							tags,
@@ -188,7 +182,7 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 							{
 								type: 'success',
 								message: `Collected: ${file.name}`,
-								details: `with tags: ${tags.join(', ')}`,
+								details: tags.length > 0 ? `with tags: ${tags.join(', ')}` : 'individual file',
 							},
 						]);
 					} catch (error) {
@@ -228,6 +222,92 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 		processNextFile(0);
 	};
 
+	// Demo function to create mock icons with various naming patterns
+	const createDemoIcons = () => {
+		setIsScanning(true);
+		setScanProgress(0);
+		setScanLog([]);
+
+		// Mock icons with various naming patterns to demonstrate kebab-case transformation
+		const mockIconData = [
+			{ name: 'arrow_right.svg', folder: '/navigation' },
+			{ name: 'check_circle.svg', folder: '/status' },
+			{ name: 'menu Icon.svg', folder: '/ui' },
+			{ name: 'userProfile.svg', folder: '/user' },
+			{ name: 'shopping_cart.svg', folder: '/ecommerce' },
+			{ name: 'search Icon.svg', folder: '/ui' },
+			{ name: 'fileUpload.svg', folder: '/actions' },
+			{ name: 'heart_filled.svg', folder: '/status' },
+			{ name: 'bell Notification.svg', folder: '/notifications' },
+			{ name: 'loginUser.svg', folder: '/user' },
+			{ name: 'home_page.svg', folder: '/navigation' },
+			{ name: 'settings_gear.svg', folder: '/ui' },
+		];
+
+		const baseSvgContent =
+			'<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/></svg>';
+
+		const iconObjects: IconObject[] = [];
+		const folderPaths = new Set<string>();
+		const allTags = new Set<string>();
+
+		// Simulate processing with progress
+		let processedCount = 0;
+		const interval = setInterval(() => {
+			if (processedCount >= mockIconData.length) {
+				clearInterval(interval);
+				setIsScanning(false);
+				setScanProgress(100);
+
+				setCollectionStats({
+					totalFiles: iconObjects.length,
+					totalFolders: folderPaths.size,
+					duplicates: 0,
+					errors: 0,
+					uniqueTags: allTags.size,
+				});
+
+				setConsolidatedIcons(iconObjects);
+				toast.success(`Demo: Created ${iconObjects.length} mock icons with various naming patterns`);
+				return;
+			}
+
+			const mockIcon = mockIconData[processedCount];
+			const folderPath = mockIcon.folder;
+			folderPaths.add(folderPath);
+
+			// Generate tags from folder
+			const tags = folderPath
+				.substring(1)
+				.split('/')
+				.filter((tag) => tag.trim() !== '');
+			tags.forEach((tag) => allTags.add(tag));
+
+			iconObjects.push({
+				name: mockIcon.name,
+				folder: folderPath,
+				size: `${Math.floor(Math.random() * 2000) + 500}B`,
+				dimensions: '24x24',
+				path: `${folderPath}/${mockIcon.name}`,
+				content: baseSvgContent,
+				selected: false,
+				tags,
+			});
+
+			setScanLog((prevLogs) => [
+				...prevLogs,
+				{
+					type: 'success',
+					message: `Demo: ${mockIcon.name}`,
+					details: `Added to ${folderPath}`,
+				},
+			]);
+
+			processedCount++;
+			setScanProgress(Math.floor((processedCount / mockIconData.length) * 100));
+		}, 150);
+	};
+
 	return (
 		<div className='space-y-6 mx-auto'>
 			<Alert
@@ -236,8 +316,8 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 				<Info className='h-4 w-4' />
 				<AlertTitle>Getting Started</AlertTitle>
 				<AlertDescription>
-					Select a folder with SVG icons to scan. The system will automatically collect all SVG files and extract their
-					metadata.
+					Select individual SVG files or a folder with SVG icons to scan. The system will automatically collect all SVG
+					files and extract their metadata.
 				</AlertDescription>
 			</Alert>
 
@@ -245,7 +325,6 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 				className={`border-2 border-dashed rounded-lg p-8 transition-colors duration-200
           ${isDragging ? 'border-primary bg-primary/5' : 'hover:border-primary hover:bg-muted/30'}
           cursor-pointer flex flex-col items-center justify-center text-center`}
-				onClick={handleFolderSelect}
 				onDragOver={handleDragOver}
 				onDragLeave={handleDragLeave}
 				onDrop={handleDrop}>
@@ -253,25 +332,58 @@ const IconCollection: React.FC<IconCollectionProps> = ({
 					<Upload className='h-8 w-8 text-primary' />
 				</div>
 				<h3 className='text-lg font-medium mb-2'>
-					{isScanning ? 'Scanning icons...' : 'Choose a folder or drag & drop'}
+					{isScanning ? 'Scanning icons...' : 'Choose files or folder, or drag & drop'}
 				</h3>
 
 				{!isScanning && (
+					<div className='flex gap-2 mb-2'>
+						<Button
+							variant='outline'
+							disabled={isScanning}
+							onClick={(e) => {
+								e.stopPropagation();
+								handleFileSelect();
+							}}>
+							<FileUp className='mr-2 h-4 w-4' />
+							Select Files
+						</Button>
+						<Button
+							variant='outline'
+							disabled={isScanning}
+							onClick={(e) => {
+								e.stopPropagation();
+								handleFolderSelect();
+							}}>
+							<FolderUp className='mr-2 h-4 w-4' />
+							Select Folder
+						</Button>
+					</div>
+				)}
+
+				{!isScanning && (
 					<Button
-						variant='outline'
+						variant='ghost'
 						disabled={isScanning}
 						className='mb-2'
 						onClick={(e) => {
 							e.stopPropagation();
-							handleFolderSelect();
+							createDemoIcons();
 						}}>
-						<FolderUp className='mr-2 h-4 w-4' />
-						Select Folder
+						Demo with Sample Icons
 					</Button>
 				)}
 				<p className='text-xs text-muted-foreground'>Supports .svg files only</p>
 				<input
 					ref={fileInputRef}
+					id='file-input'
+					type='file'
+					className='hidden'
+					multiple
+					accept='.svg'
+					onChange={handleFilesSelected}
+				/>
+				<input
+					ref={folderInputRef}
 					id='folder-input'
 					type='file'
 					className='hidden'

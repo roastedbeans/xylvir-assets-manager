@@ -1,24 +1,12 @@
 'use client';
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import {
-	CheckCircle,
-	Search,
-	Tag,
-	Plus,
-	X,
-	FolderUp,
-	FolderIcon,
-	ChevronLeft,
-	ChevronRight,
-	ChevronsLeft,
-	ChevronsRight,
-} from 'lucide-react';
-import { IconObject, CollectionStats } from './types';
+import { Search, Tag, Plus, X, FolderUp, FolderIcon, Paintbrush, Loader2 } from 'lucide-react';
+import { IconObject, CollectionStats } from '../../../../types/icon-helper-types';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import {
 	Pagination,
@@ -29,6 +17,14 @@ import {
 	PaginationNext,
 	PaginationPrevious,
 } from '@/components/ui/pagination';
+import ColorPicker from '@rc-component/color-picker';
+import '@rc-component/color-picker/assets/index.css';
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 interface IconDisplayProps {
 	consolidatedIcons: IconObject[];
@@ -37,6 +33,7 @@ interface IconDisplayProps {
 	selectAllIcons: () => void;
 	clearIconSelection: () => void;
 	onProceedToProcessing: () => void;
+	isProcessing: boolean;
 	onBackToCollection: () => void;
 	setConsolidatedIcons: React.Dispatch<React.SetStateAction<IconObject[]>>;
 }
@@ -110,22 +107,24 @@ const TagList = React.memo(
 
 		return (
 			<>
-				{tags.map((tag, tagIndex) => (
-					<Badge
-						key={`${tag}-${tagIndex}`}
-						variant='secondary'
-						className='text-xs flex items-center gap-0.5 whitespace-nowrap'>
-						<span>{tag}</span>
-						<button
-							className='ml-1 hover:text-destructive'
-							onClick={(e) => {
-								e.stopPropagation();
-								onRemoveTag(iconIndex, tag);
-							}}>
-							<X className='h-3 w-3' />
-						</button>
-					</Badge>
-				))}
+				{tags
+					.sort((a, b) => a.length - b.length)
+					.map((tag, tagIndex) => (
+						<Badge
+							key={`${tag}-${tagIndex}`}
+							variant='secondary'
+							className='text-xs flex items-center gap-0.5 whitespace-nowrap'>
+							<span>{tag}</span>
+							<button
+								className='ml-1 hover:text-destructive'
+								onClick={(e) => {
+									e.stopPropagation();
+									onRemoveTag(iconIndex, tag);
+								}}>
+								<X className='h-3 w-3' />
+							</button>
+						</Badge>
+					))}
 			</>
 		);
 	}
@@ -136,51 +135,64 @@ TagList.displayName = 'TagList';
 // IconCard component
 const IconCard = React.memo(
 	({
+		selectedColor,
 		icon,
 		toggleIconSelection,
 		onAddTag,
 		onRemoveTag,
+		isProcessing,
 	}: {
+		selectedColor: string;
 		icon: IndexedIconObject;
 		toggleIconSelection: (index: number) => void;
 		onAddTag: (index: number, tag: string) => void;
 		onRemoveTag: (index: number, tag: string) => void;
+		isProcessing: boolean;
 	}) => {
 		const maxTagsReached = icon.tags && icon.tags.length >= 6;
 
 		return (
 			<div
-				className={`border rounded-md flex flex-col p-2 justify-between gap-2 hover:border-primary cursor-pointer transition-all ${
-					icon.selected ? 'border-primary bg-primary/5 ring-1 ring-primary' : ''
+				className={`border rounded-md flex w-full flex-col p-2 justify-between gap-2 hover:border-primary cursor-pointer transition-all ${
+					icon.selected ? 'border-primary ring-1 ring-primary' : ''
 				}`}
 				onClick={() => toggleIconSelection(icon.originalIndex)}>
-				<div className='relative w-full h-24 bg-secondary/30 rounded flex items-center justify-center'>
-					{icon.selected && (
-						<div className='absolute top-2 right-2 w-5 h-5 bg-primary text-white rounded-full flex items-center justify-center'>
-							<CheckCircle className='w-4 h-4' />
-						</div>
-					)}
-
+				<div className='relative w-full h-24 bg-secondary/30 rounded flex items-center justify-center mx-auto object-contain'>
 					{icon.content ? (
 						<div
-							className='w-10 h-10'
+							className={`w-16 h-16 flex items-center justify-center overflow-hidden ${
+								isProcessing ? 'animate-pulse' : ''
+							} [&>svg]:max-w-full [&>svg]:max-h-full [&>svg]:w-full [&>svg]:h-full`}
+							style={{
+								color: selectedColor,
+							}}
 							dangerouslySetInnerHTML={{ __html: icon.content }}
 						/>
 					) : (
-						<div className='w-6 h-6 bg-gray-400 rounded'></div>
+						<div className='w-6 h-6 bg-gray-400 rounded animate-pulse'></div>
 					)}
+
+					{isProcessing && <Loader2 className='h-4 w-4 animate-spin absolute top-2 right-2 text-primary' />}
 				</div>
 
 				<div className='flex justify-between items-start'>
-					<div>
-						<p className='font-medium text-sm truncate'>{icon.name}</p>
-						<p className='text-xs text-muted-foreground'>{icon.dimensions}</p>
+					<div className='flex flex-col gap-1 w-full'>
+						<p className='font-medium text-sm truncate text-ellipsis overflow-clip line-clamp-1'>
+							{icon.name.split('.')[0]}
+						</p>
+						<div className='flex gap-1'>
+							<Badge
+								variant='outline'
+								className='text-xs'>
+								{icon.dimensions}
+							</Badge>
+							<Badge
+								variant='outline'
+								className='text-xs'>
+								{icon.size}
+							</Badge>
+						</div>
 					</div>
-					<Badge
-						variant='outline'
-						className='text-xs'>
-						{icon.size}
-					</Badge>
 				</div>
 
 				<Badge
@@ -190,7 +202,7 @@ const IconCard = React.memo(
 					<span className='truncate'>{icon.folder}</span>
 				</Badge>
 
-				<div className='flex flex-col gap-2 justify-between min-h-[80px]'>
+				<div className='flex flex-col gap-2 justify-between min-h-[80px] mt-auto'>
 					<div className='flex flex-wrap gap-1 min-h-[40px] py-1 px-1'>
 						<TagList
 							tags={icon.tags}
@@ -215,19 +227,19 @@ IconCard.displayName = 'IconCard';
 
 const IconDisplay: React.FC<IconDisplayProps> = ({
 	consolidatedIcons,
-	collectionStats,
 	toggleIconSelection,
 	selectAllIcons,
 	clearIconSelection,
 	onProceedToProcessing,
-	onBackToCollection,
 	setConsolidatedIcons,
+	isProcessing,
 }) => {
 	const [searchTerm, setSearchTerm] = useState('');
 	const [activeTag, setActiveTag] = useState('all');
 	const [activeFolder, setActiveFolder] = useState('all');
 	const [activeViewMode, setActiveViewMode] = useState<'tags' | 'folders'>('tags');
 	const [currentPage, setCurrentPage] = useState(1);
+	const [selectedColor, setSelectedColor] = useState('#000000');
 	const itemsPerPage = 8;
 
 	// Reset to first page when filters change
@@ -376,7 +388,6 @@ const IconDisplay: React.FC<IconDisplayProps> = ({
 	const getPaginationItems = () => {
 		const items = [];
 		const maxVisiblePages = 5;
-		const ellipsisThreshold = 7;
 
 		if (totalPages <= maxVisiblePages) {
 			// Show all pages if total is small
@@ -425,14 +436,48 @@ const IconDisplay: React.FC<IconDisplayProps> = ({
 						<CardDescription>Browse and select icons for processing</CardDescription>
 					</div>
 
-					{consolidatedIcons.length > 0 && (
-						<Button
-							onClick={onProceedToProcessing}
-							disabled={selectedIconsCount === 0}
-							className='ml-auto'>
-							Process {selectedIconsCount > 0 ? `${selectedIconsCount} Selected` : 'Icons'} →
-						</Button>
-					)}
+					<div className='flex items-center gap-2'>
+						<DropdownMenu>
+							<DropdownMenuTrigger asChild>
+								<Button
+									variant='outline'
+									style={{
+										borderRadius: '100%',
+										borderColor: selectedColor,
+									}}
+									size='icon'>
+									<Paintbrush
+										className='h-4 w-4'
+										color={selectedColor}
+									/>
+								</Button>
+							</DropdownMenuTrigger>
+							<DropdownMenuContent>
+								<ColorPicker
+									style={{ boxShadow: 'none' }}
+									value={selectedColor}
+									onChange={(color) => setSelectedColor(color.toHexString())}
+								/>
+								<p className='text-xs text-muted-foreground text-center mx-auto pb-2 max-w-60'>
+									Process icons and set{' '}
+									<span
+										className='font-bold'
+										style={{ color: selectedColor }}>
+										fill="currentColor"
+									</span>{' '}
+									for dynamic icon color
+								</p>
+							</DropdownMenuContent>
+						</DropdownMenu>
+						{consolidatedIcons.length > 0 && (
+							<Button
+								onClick={onProceedToProcessing}
+								disabled={selectedIconsCount === 0}
+								className='ml-auto'>
+								Process {selectedIconsCount > 0 ? `${selectedIconsCount} Selected` : 'Icons'} →
+							</Button>
+						)}
+					</div>
 				</div>
 			</CardHeader>
 			<CardContent className='space-y-4'>
@@ -487,18 +532,38 @@ const IconDisplay: React.FC<IconDisplayProps> = ({
 						defaultValue='all'
 						value={activeTag}
 						onValueChange={setActiveTag}>
-						<TabsList className='mb-2 flex flex-wrap h-auto'>
+						<TabsList className={`mb-2 flex h-auto max-h-10 ${allTags.length > 9 ? 'w-full' : ''}`}>
 							<TabsTrigger value='all'>All Icons ({consolidatedIcons.length})</TabsTrigger>
-
-							{allTags.map((tag) => (
+							{allTags.slice(0, 9).map((tag) => (
 								<TabsTrigger
 									key={tag}
 									value={tag}
-									className='flex items-center gap-1'>
-									<Tag className='h-3 w-3' />
+									className='flex items-center cursor-pointer'>
 									{tag} ({consolidatedIcons.filter((icon) => icon.tags && icon.tags.includes(tag)).length})
 								</TabsTrigger>
 							))}
+							{allTags.length > 9 && (
+								<DropdownMenu>
+									<DropdownMenuTrigger asChild>
+										<Button
+											variant='outline'
+											size='sm'>
+											...
+											<Tag className='h-3 w-3' />
+										</Button>
+									</DropdownMenuTrigger>
+									<DropdownMenuContent>
+										{allTags.slice(9).map((tag) => (
+											<DropdownMenuItem
+												key={tag}
+												onClick={() => setActiveTag(tag)}>
+												<Tag className='h-3 w-3' />
+												{tag} ({consolidatedIcons.filter((icon) => icon.tags && icon.tags.includes(tag)).length})
+											</DropdownMenuItem>
+										))}
+									</DropdownMenuContent>
+								</DropdownMenu>
+							)}
 						</TabsList>
 					</Tabs>
 				)}
@@ -547,7 +612,9 @@ const IconDisplay: React.FC<IconDisplayProps> = ({
 					{paginatedIcons.length > 0 ? (
 						paginatedIcons.map((icon) => (
 							<IconCard
+								selectedColor={selectedColor}
 								key={`icon-${icon.name}-${icon.originalIndex}-${icon.tags?.length || 0}`}
+								isProcessing={isProcessing}
 								icon={icon}
 								toggleIconSelection={toggleIconSelection}
 								onAddTag={addTagToIcon}
@@ -569,7 +636,7 @@ const IconDisplay: React.FC<IconDisplayProps> = ({
 
 				{/* Pagination controls */}
 				{filteredIcons.length > itemsPerPage && (
-					<div className='flex justify-center items-center gap-2 pt-4 border-t select-none'>
+					<div className='flex justify-center items-center gap-2 pt-4 border-t select-none relative'>
 						<Pagination>
 							<PaginationContent>
 								<PaginationItem>
@@ -605,8 +672,8 @@ const IconDisplay: React.FC<IconDisplayProps> = ({
 						</Pagination>
 
 						{totalPages > 7 && (
-							<div className='flex items-center gap-2 ml-2'>
-								<span className='text-sm text-muted-foreground'>Go to:</span>
+							<div className='flex items-center gap-2 ml-2 absolute right-0'>
+								<span className='text-sm text-muted-foreground text-nowrap'>Go to:</span>
 								<Select
 									value={currentPage.toString()}
 									onValueChange={(value) => goToPage(parseInt(value))}>

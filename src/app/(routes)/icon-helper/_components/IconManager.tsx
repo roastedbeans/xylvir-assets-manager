@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import IconCollection from './IconCollection';
 import IconDisplay from './IconDisplay';
 import IconProcessing from './IconProcessing';
@@ -8,8 +8,7 @@ import { toast } from 'sonner';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { CheckIcon, ArrowRightIcon, ArrowLeftIcon, InfoIcon, DownloadIcon } from 'lucide-react';
+import { CheckIcon, ArrowRightIcon, ArrowLeftIcon, DownloadIcon } from 'lucide-react';
 
 import {
 	CollectionStats,
@@ -19,20 +18,25 @@ import {
 	ProcessingFeatures,
 	ProcessedResults,
 	ExportOptions,
-} from './types';
+} from '../../../../types/icon-helper-types';
+import { generateIconSense } from '@/lib/icon-sense';
 
 // Steps configuration for better visualization
 const STEPS = [
 	{ id: 'collection', label: 'Collection', description: 'Import and manage SVG files' },
-	{ id: 'display', label: 'Display', description: 'View and select icons' },
 	{ id: 'processing', label: 'Processing', description: 'Apply transformations' },
 	{ id: 'export', label: 'Export', description: 'Download processed icons' },
 ];
+
+// Batch processing configuration
+let BATCH_SIZE = 500;
+let BATCH_DELAY_MS = 1000; // 1 second delay between batches
 
 const IconManager = () => {
 	const [activeStep, setActiveStep] = useState('collection');
 	const [scanProgress, setScanProgress] = useState(0);
 	const [processProgress, setProcessProgress] = useState(0);
+	const [isProcessing, setIsProcessing] = useState(false);
 	const [collectionStats, setCollectionStats] = useState<CollectionStats>({
 		totalFiles: 0,
 		totalFolders: 0,
@@ -43,6 +47,21 @@ const IconManager = () => {
 	const [isScanning, setIsScanning] = useState(false);
 	const [consolidatedIcons, setConsolidatedIcons] = useState<IconObject[]>([]);
 	const [scanLog, setScanLog] = useState<ScanLogEntry[]>([]);
+	const [batchProcessing, setBatchProcessing] = useState({
+		batchSize: BATCH_SIZE,
+		batchDelay: BATCH_DELAY_MS,
+	});
+
+	// Add state for batch processing info
+	const [batchInfo, setBatchInfo] = useState<{
+		currentBatch: number;
+		totalBatches: number;
+		batchProgress: number;
+	}>({
+		currentBatch: 0,
+		totalBatches: 0,
+		batchProgress: 0,
+	});
 
 	// Add state for processing features
 	const [processingFeatures, setProcessingFeatures] = useState<ProcessingFeatures>({
@@ -60,6 +79,11 @@ const IconManager = () => {
 
 		// Optimization feature
 		optimization: true,
+
+		// Icon Sense feature
+		iconSense: true,
+		nameSense: false,
+		tagSense: false,
 	});
 
 	// Add state for export options
@@ -77,6 +101,9 @@ const IconManager = () => {
 		totalSize: '0KB',
 	});
 
+	// Add state for custom prefix
+	const [customPrefix, setCustomPrefix] = useState<string>('icon-');
+
 	// Get current step index for progress indicator
 	const currentStepIndex = STEPS.findIndex((step) => step.id === activeStep);
 
@@ -85,10 +112,8 @@ const IconManager = () => {
 		switch (stepId) {
 			case 'collection':
 				return collectionStats.totalFiles > 0;
-			case 'display':
-				return consolidatedIcons.some((icon) => icon.selected);
 			case 'processing':
-				return processedResults.processedCount > 0;
+				return consolidatedIcons.some((icon) => icon.selected) && processedResults.processedCount > 0;
 			case 'export':
 				return false; // Export is the final step
 			default:
@@ -98,33 +123,99 @@ const IconManager = () => {
 
 	// Add handler for toggling processing features
 	const toggleProcessingFeature = (feature: ProcessingFeature) => {
-		setProcessingFeatures((prev) => ({
-			...prev,
-			[feature]: !prev[feature],
-		}));
+		console.log('toggleProcessingFeature', feature);
 
-		// Handle parent-child relationships
-		if (feature === 'colorization' && !processingFeatures.colorization) {
-			// If enabling colorization, don't change children
-		} else if (feature === 'colorization' && processingFeatures.colorization) {
-			// If disabling colorization, disable all children
-			setProcessingFeatures((prev) => ({
-				...prev,
-				replaceBlack: false,
-				preserveNone: false,
-				removeWhiteBg: false,
-				addRootFill: false,
-			}));
-		} else if (feature === 'standardization' && !processingFeatures.standardization) {
-			// If enabling standardization, don't change children
-		} else if (feature === 'standardization' && processingFeatures.standardization) {
-			// If disabling standardization, disable all children
-			setProcessingFeatures((prev) => ({
-				...prev,
-				kebabCase: false,
-				addPrefix: false,
-			}));
-		}
+		setProcessingFeatures((prev) => {
+			const updated = { ...prev };
+
+			// Toggle the feature
+			updated[feature] = !prev[feature];
+
+			// Handle parent-child relationships
+			if (feature === 'colorization') {
+				if (!updated.colorization) {
+					// If disabling colorization, disable all children
+					updated.replaceBlack = false;
+					updated.preserveNone = false;
+					updated.removeWhiteBg = false;
+					updated.addRootFill = false;
+				}
+			} else if (feature === 'standardization') {
+				if (!updated.standardization) {
+					// If disabling standardization, disable all children
+					updated.kebabCase = false;
+					updated.addPrefix = false;
+				}
+			}
+
+			// If enabling any child feature, make sure parent is enabled too
+			if (['replaceBlack', 'preserveNone', 'removeWhiteBg', 'addRootFill'].includes(feature)) {
+				if (updated[feature]) {
+					updated.colorization = true;
+				}
+			} else if (['kebabCase', 'addPrefix'].includes(feature)) {
+				if (updated[feature]) {
+					updated.standardization = true;
+				}
+			}
+
+			if (feature === 'iconSense') {
+				if (!updated.iconSense) {
+					updated.nameSense = false;
+					updated.tagSense = false;
+				}
+			}
+
+			if (feature === 'nameSense') {
+				if (updated.nameSense) {
+					setBatchProcessing({
+						batchSize: 60,
+						batchDelay: 60000,
+					});
+				}
+			} else if (feature === 'tagSense') {
+				if (updated.tagSense && !updated.nameSense) {
+					setBatchProcessing({
+						batchSize: 200,
+						batchDelay: 2000,
+					});
+				}
+			} else {
+				if (updated.nameSense && updated.tagSense) {
+					setBatchProcessing({
+						batchSize: 500,
+						batchDelay: 1000,
+					});
+				}
+			}
+
+			return updated;
+		});
+	};
+
+	// Add handler for resetting processing features to default
+	const resetProcessingFeatures = () => {
+		setProcessingFeatures({
+			// Colorization features
+			colorization: false,
+			replaceBlack: false,
+			preserveNone: false,
+			removeWhiteBg: false,
+			addRootFill: false,
+
+			// Standardization features
+			standardization: false,
+			kebabCase: false,
+			addPrefix: false,
+
+			// Optimization feature
+			optimization: false,
+
+			// Icon Sense feature
+			iconSense: false,
+			nameSense: false,
+			tagSense: false,
+		});
 	};
 
 	const toggleIconSelection = (index: number) => {
@@ -143,7 +234,138 @@ const IconManager = () => {
 		setExportOptions((prev) => ({ ...prev, [option]: !prev[option] }));
 	};
 
-	const processIcons = () => {
+	// Helper function to split array into batches
+	const createBatches = <T,>(array: T[], batchSize: number): T[][] => {
+		const batches: T[][] = [];
+		for (let i = 0; i < array.length; i += batchSize) {
+			batches.push(array.slice(i, i + batchSize));
+		}
+		return batches;
+	};
+
+	// Helper function to process a single batch of icons
+	const processBatch = async (iconBatch: IconObject[]): Promise<IconObject[]> => {
+		// Process icons sequentially to respect rate limits
+		const processedBatch: IconObject[] = [];
+
+		for (const icon of iconBatch) {
+			if (!icon.selected) {
+				processedBatch.push(icon);
+				continue;
+			}
+
+			let processedIcon = { ...icon };
+
+			if (processingFeatures.iconSense && (processingFeatures.nameSense || processingFeatures.tagSense)) {
+				const needsNameGeneration = processingFeatures.nameSense;
+				const needsTagGeneration = processingFeatures.tagSense;
+
+				// Set batch processing based on operation type
+				const isImageAnalysis = needsNameGeneration;
+
+				try {
+					const iconSense = await generateIconSense(processedIcon, isImageAnalysis);
+					if (iconSense) {
+						if (needsNameGeneration && iconSense.name) {
+							processedIcon.name = `${iconSense.name}.svg`;
+						}
+						if (needsTagGeneration && iconSense.tags) {
+							processedIcon.tags = iconSense.tags;
+						}
+					}
+				} catch (error) {
+					console.warn('IconSense processing failed for:', processedIcon.name, error);
+				}
+			}
+
+			// Apply kebab-case transformation if enabled
+			if (processingFeatures.kebabCase && processingFeatures.standardization) {
+				// Convert filename to kebab-case
+				const filenameParts = processedIcon.name.split('.');
+				const extension = filenameParts.pop();
+				const basename = filenameParts.join('.');
+
+				// Convert to kebab-case: replace spaces, underscores, and camelCase with hyphens
+				const kebabName = basename
+					.replace(/([a-z])([A-Z])/g, '$1-$2') // camelCase to kebab-case
+					.replace(/[\s_]+/g, '-') // spaces and underscores to hyphens
+					.replace(/[^a-zA-Z0-9-]/g, '') // remove special characters
+					.toLowerCase()
+					.replace(/-+/g, '-') // collapse multiple hyphens
+					.replace(/^-|-$/g, '') // trim leading/trailing hyphens
+					.replace(/\./g, ''); // remove dots
+
+				processedIcon.name = `${kebabName}.${extension}`;
+
+				// Update the path as well
+				const pathParts = processedIcon.path.split('/');
+				pathParts[pathParts.length - 1] = processedIcon.name;
+				processedIcon.path = pathParts.join('/');
+			}
+
+			// Apply prefix if enabled
+			if (processingFeatures.addPrefix && processingFeatures.standardization) {
+				const prefix = customPrefix || 'icon-';
+				if (!processedIcon.name.startsWith(prefix)) {
+					const filenameParts = processedIcon.name.split('.');
+					const extension = filenameParts.pop();
+					const basename = filenameParts.join('.');
+					processedIcon.name = `${prefix}${basename}.${extension}`;
+
+					// Update the path as well
+					const pathParts = processedIcon.path.split('/');
+					pathParts[pathParts.length - 1] = processedIcon.name;
+					processedIcon.path = pathParts.join('/');
+				}
+			}
+
+			// Apply colorization transformations if enabled
+			if (processingFeatures.colorization && processedIcon.content) {
+				let processedContent = processedIcon.content;
+
+				if (processingFeatures.replaceBlack) {
+					// Replace all fills and strokes with currentColor
+					processedContent = processedContent
+						.replace(/fill="#000000"/g, 'fill="currentColor"')
+						.replace(/stroke="#000000"/g, 'stroke="currentColor"')
+						.replace(/fill="#000"/g, 'fill="currentColor"')
+						.replace(/stroke="#000"/g, 'stroke="currentColor"')
+						.replace(/fill="black"/g, 'fill="currentColor"')
+						.replace(/stroke="black"/g, 'stroke="currentColor"');
+				} else {
+					// Replace fill="currentColor" with fill="black"
+					processedContent = processedContent.replace(/fill="currentColor"/g, 'fill="black"');
+					processedContent = processedContent.replace(/stroke="currentColor"/g, 'stroke="black"');
+				}
+
+				if (processingFeatures.removeWhiteBg) {
+					// Remove white backgrounds
+					processedContent = processedContent
+						.replace(/fill="#ffffff"/g, 'fill="none"')
+						.replace(/fill="#fff"/g, 'fill="none"')
+						.replace(/fill="white"/g, 'fill="none"');
+				} else {
+					// Replace fill="none" with fill="white"
+					processedContent = processedContent.replace(/fill="none"/g, 'fill="white"');
+				}
+
+				if (processingFeatures.addRootFill) {
+					// Add fill="currentColor" to root SVG if no fill is present
+					if (!processedContent.includes('fill=') && processedContent.includes('<svg')) {
+						processedContent = processedContent.replace(/<svg([^>]*)>/, '<svg$1 fill="currentColor">');
+					}
+				}
+
+				processedIcon.content = processedContent;
+			}
+
+			processedBatch.push(processedIcon);
+		}
+
+		return processedBatch;
+	};
+
+	const processIcons = async () => {
 		const selectedIcons = consolidatedIcons.filter((icon) => icon.selected);
 
 		if (selectedIcons.length === 0) {
@@ -151,35 +373,134 @@ const IconManager = () => {
 			return;
 		}
 
+		setIsProcessing(true);
 		setProcessProgress(0);
 
-		// Collect the enabled features
-		const enabledFeatures: string[] = [];
-		Object.entries(processingFeatures).forEach(([feature, enabled]) => {
-			if (enabled) {
-				enabledFeatures.push(feature);
-			}
-		});
+		try {
+			// Create batches of icons
+			const iconBatches = createBatches(consolidatedIcons, BATCH_SIZE);
+			const totalBatches = iconBatches.length;
 
-		// Simulate processing with a progress bar
-		let progress = 0;
-		const interval = setInterval(() => {
-			progress += 5;
-			setProcessProgress(progress);
+			// Initialize batch info
+			setBatchInfo({
+				currentBatch: 0,
+				totalBatches,
+				batchProgress: 0,
+			});
 
-			if (progress >= 100) {
-				clearInterval(interval);
+			console.log(`Processing ${selectedIcons.length} icons in ${totalBatches} batches of up to ${BATCH_SIZE}`);
 
-				// Set processed results
-				setProcessedResults({
-					processedCount: selectedIcons.length,
-					featuresApplied: enabledFeatures,
-					totalSize: `${Math.round(selectedIcons.reduce((sum, icon) => sum + parseInt(icon.size), 0) / 1024)}KB`,
+			let processedIcons: IconObject[] = [];
+			let processedCount = 0;
+
+			// Process each batch sequentially
+			for (let batchIndex = 0; batchIndex < iconBatches.length; batchIndex++) {
+				const batch = iconBatches[batchIndex];
+				const selectedInBatch = batch.filter((icon) => icon.selected).length;
+				const iconSenseCount = batch.filter((icon) => icon.selected && processingFeatures.iconSense).length;
+
+				// Update batch info
+				setBatchInfo({
+					currentBatch: batchIndex + 1,
+					totalBatches,
+					batchProgress: 0,
 				});
 
-				toast.success(`Processed ${selectedIcons.length} icons successfully`);
+				console.log(
+					`Processing batch ${
+						batchIndex + 1
+					}/${totalBatches} (${selectedInBatch} selected icons, ${iconSenseCount} with IconSense)`
+				);
+
+				// Process the current batch (with rate limiting built-in)
+				const processedBatch = await processBatch(batch);
+				processedIcons.push(...processedBatch);
+
+				// Update processed count
+				processedCount += selectedInBatch;
+
+				// Update overall progress
+				const overallProgress = ((batchIndex + 1) / totalBatches) * 100;
+				setProcessProgress(overallProgress);
+
+				// Update batch progress to 100% for completed batch
+				setBatchInfo((prev) => ({
+					...prev,
+					batchProgress: 100,
+				}));
+
+				// Add delay between batches to prevent overwhelming the system
+				if (batchIndex < iconBatches.length - 1) {
+					console.log(
+						`Batch ${batchIndex + 1} completed. Waiting ${
+							batchProcessing.batchDelay / 1000
+						} seconds before next batch...`
+					);
+					await new Promise((resolve) => setTimeout(resolve, batchProcessing.batchDelay));
+				}
 			}
-		}, 100);
+
+			// Update the consolidated icons with processed versions
+			setConsolidatedIcons(processedIcons);
+
+			// Collect the enabled features for display
+			const enabledFeatures: string[] = [];
+			if (processingFeatures.colorization) enabledFeatures.push('Colorization');
+			if (processingFeatures.standardization) enabledFeatures.push('Standardization');
+			if (processingFeatures.optimization) enabledFeatures.push('Optimization');
+			if (processingFeatures.iconSense) enabledFeatures.push('Icon Sense');
+
+			// Calculate total size
+			const totalSizeInBytes = selectedIcons.reduce((sum, icon) => {
+				const sizeStr = icon.size;
+				const sizeNum = parseFloat(sizeStr);
+				if (sizeStr.includes('KB')) {
+					return sum + sizeNum * 1024;
+				} else if (sizeStr.includes('MB')) {
+					return sum + sizeNum * 1024 * 1024;
+				}
+				return sum + sizeNum;
+			}, 0);
+
+			// Simulate size reduction from optimization
+			const optimizedSize = processingFeatures.optimization
+				? totalSizeInBytes * 0.7 // Assume 30% reduction from optimization
+				: totalSizeInBytes;
+
+			// Format the size for display
+			const formattedSize = (bytes: number): string => {
+				if (bytes < 1024) return bytes + 'B';
+				if (bytes < 1048576) return (bytes / 1024).toFixed(1) + 'KB';
+				return (bytes / 1048576).toFixed(1) + 'MB';
+			};
+
+			// Set processed results
+			setProcessedResults({
+				processedCount: processedCount,
+				featuresApplied: enabledFeatures,
+				totalSize: formattedSize(optimizedSize),
+			});
+
+			// Reset batch info
+			setBatchInfo({
+				currentBatch: 0,
+				totalBatches: 0,
+				batchProgress: 0,
+			});
+
+			toast.success(`Processed ${processedCount} icons successfully in ${totalBatches} batches with rate limiting`);
+		} catch (error) {
+			console.error('Error processing icons:', error);
+			toast.error('Failed to process icons. Please try again.');
+			setProcessProgress(0);
+			setBatchInfo({
+				currentBatch: 0,
+				totalBatches: 0,
+				batchProgress: 0,
+			});
+		} finally {
+			setIsProcessing(false);
+		}
 	};
 
 	const generateJsonManifest = () => {
@@ -301,8 +622,12 @@ export interface IconWithTags {
 		}
 	};
 
-	const goToDisplay = () => setActiveStep('display');
+	const processingRef = useRef<HTMLDivElement>(null);
+
 	const goToProcessing = () => setActiveStep('processing');
+	const scrollToProcessing = () => {
+		processingRef.current?.scrollIntoView({ behavior: 'smooth' });
+	};
 	const goToExport = () => setActiveStep('export');
 	const goToCollection = () => setActiveStep('collection');
 
@@ -361,39 +686,45 @@ export interface IconWithTags {
 						setCollectionStats={setCollectionStats}
 						setScanLog={setScanLog}
 						setConsolidatedIcons={setConsolidatedIcons}
-						onProceedToDisplay={goToDisplay}
+						onProceedToDisplay={goToProcessing}
 					/>
 				)}
 
-				{/* Step 2: Display */}
-				{activeStep === 'display' && (
-					<IconDisplay
-						consolidatedIcons={consolidatedIcons}
-						collectionStats={collectionStats}
-						toggleIconSelection={toggleIconSelection}
-						selectAllIcons={selectAllIcons}
-						clearIconSelection={clearIconSelection}
-						onProceedToProcessing={goToProcessing}
-						onBackToCollection={goToCollection}
-						setConsolidatedIcons={setConsolidatedIcons}
-					/>
-				)}
-
-				{/* Step 3: Processing */}
+				{/* Step 2: Display and Processing */}
 				{activeStep === 'processing' && (
-					<IconProcessing
-						processingFeatures={processingFeatures}
-						toggleProcessingFeature={toggleProcessingFeature}
-						consolidatedIcons={consolidatedIcons}
-						processedResults={processedResults}
-						processProgress={processProgress}
-						onBackToDisplay={goToDisplay}
-						onProceedToExport={goToExport}
-						processIcons={processIcons}
-					/>
+					<div className='flex flex-col gap-4'>
+						<IconDisplay
+							consolidatedIcons={consolidatedIcons}
+							collectionStats={collectionStats}
+							toggleIconSelection={toggleIconSelection}
+							selectAllIcons={selectAllIcons}
+							clearIconSelection={clearIconSelection}
+							onProceedToProcessing={scrollToProcessing}
+							onBackToCollection={goToCollection}
+							setConsolidatedIcons={setConsolidatedIcons}
+							isProcessing={isProcessing}
+						/>
+						<IconProcessing
+							processingRef={processingRef as React.RefObject<HTMLDivElement>}
+							processingFeatures={processingFeatures}
+							toggleProcessingFeature={toggleProcessingFeature}
+							resetProcessingFeatures={resetProcessingFeatures}
+							customPrefix={customPrefix}
+							setCustomPrefix={setCustomPrefix}
+							consolidatedIcons={consolidatedIcons}
+							processedResults={processedResults}
+							processProgress={processProgress}
+							isProcessing={isProcessing}
+							onBackToDisplay={goToCollection}
+							onProceedToExport={goToExport}
+							processIcons={processIcons}
+							// Pass batch info for display
+							batchInfo={batchInfo}
+						/>
+					</div>
 				)}
 
-				{/* Step 4: Export */}
+				{/* Step 3: Export */}
 				{activeStep === 'export' && (
 					<IconExport
 						consolidatedIcons={consolidatedIcons}

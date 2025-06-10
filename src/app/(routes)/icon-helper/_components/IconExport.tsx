@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { DownloadIcon, FolderIcon, FileIcon, ArchiveIcon, TagIcon } from 'lucide-react';
-import { IconObject, ExportOptions } from './types';
+import { IconObject, ExportOptions } from '../../../../types/icon-helper-types';
 
 interface IconExportProps {
 	consolidatedIcons: IconObject[];
@@ -90,7 +90,7 @@ const IconExport: React.FC<IconExportProps> = ({
 			.map(
 				(icon) =>
 					`"${icon.name.replace('.svg', '')}": {
-      "path": "${icon.folder}/${icon.name}",
+      "path": "/icons/${icon.name}",
       "width": ${icon.dimensions.split('x')[0]},
       "height": ${icon.dimensions.split('x')[1]}${
 						exportOptions.includeTags && icon.tags?.length
@@ -117,40 +117,42 @@ const IconExport: React.FC<IconExportProps> = ({
 									<Label
 										htmlFor='include-typescript'
 										className='text-sm'>
-										Include TypeScript Types
+										Include JavaScript Constants
 									</Label>
-									<p className='text-xs text-muted-foreground'>Generate icon name constants and types</p>
+									<p className='text-xs text-muted-foreground'>Generate icon name constants and exports</p>
 								</div>
 							</div>
 
 							{exportOptions.includeTypescript && (
 								<div className='ml-8 mb-3 border-l-2 pl-3 text-xs font-mono text-muted-foreground'>
 									<pre className='whitespace-pre-wrap'>
-										{`export const IconNames = {
+										{`export const icons = {
   ${selectedIcons
 		.slice(0, 3)
 		.map(
 			(icon) =>
-				`${icon.name.replace('.svg', '').replace(/-([a-z])/g, (g) => g[1].toUpperCase())}: "${icon.name.replace(
-					'.svg',
-					''
-				)}"`
+				`"${icon.name.replace('.svg', '')}": {
+    path: "${icon.folder}/${icon.name}",
+    width: ${icon.dimensions.split('x')[0]},
+    height: ${icon.dimensions.split('x')[1]}${
+					exportOptions.includeTags && icon.tags?.length
+						? `,
+    tags: ${JSON.stringify(icon.tags)}`
+						: ''
+				}
+  }`
 		)
 		.join(',\n  ')}${selectedIcons.length > 3 ? ',\n  // ... more icons' : ''}
-} as const;
+};
 
-export type IconName = keyof typeof IconNames;${
+export const iconNames = Object.keys(icons);${
 											exportOptions.includeTags
 												? `
 
-// Tags are also exported as constants and types
-export const IconTags = {
-  ${Array.from(new Set(selectedIcons.flatMap((icon) => (icon.tags || []).slice(0, 5))))
-		.map((tag) => `${tag.replace(/-([a-z])/g, (_, g) => g.toUpperCase())}: "${tag}"`)
-		.join(',\n  ')}
-} as const;
-
-export type IconTag = keyof typeof IconTags;`
+// Export all unique tags
+export const iconTags = [
+  ${JSON.stringify(Array.from(new Set(selectedIcons.flatMap((icon) => icon.tags || []).slice(0, 5))))}
+].flat();`
 												: ''
 										}`}
 									</pre>
@@ -289,7 +291,7 @@ export type IconTag = keyof typeof IconTags;`
 											size={16}
 											className='mr-1'
 										/>{' '}
-										icons.ts
+										icons.js
 									</div>
 								)}
 							</div>

@@ -1,0 +1,2698 @@
+{
+	"icons": {
+		"glass-laboratory-flask": {
+			"path": "/isometric-icons/isometric-glass-laboratory-flask.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "filled", "beaker", "science", "laboratory", "experiment"]
+		},
+		"lightning-bolt-filled": {
+			"path": "/isometric-icons/isometric-lightning-bolt-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "power", "energy", "filled", "electricity", "iconography"]
+		},
+		"bar-chart-increasing": {
+			"path": "/isometric-icons/isometric-bar-chart-increasing.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "filled", "growth", "analytics", "data-visualization", "business-intelligence"]
+		},
+		"network-distribution-structure": {
+			"path": "/isometric-icons/isometric-network-distribution-structure.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "network", "outline", "connection", "distribution", "communication"]
+		},
+		"person-with-glasses-thinking": {
+			"path": "/isometric-icons/isometric-person-with-glasses-thinking.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "avatar", "outline", "thought", "profile", "user-interface"]
+		},
+		"cart-add-outline": {
+			"path": "/isometric-icons/isometric-cart-add-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "outline", "shopping", "add-item", "ecommerce", "interface"]
+		},
+		"arrow-down-3d": {
+			"path": "/isometric-icons/isometric-arrow-down-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "3d", "arrow", "direction", "interface", "navigation"]
+		},
+		"tennis-ball-outline": {
+			"path": "/isometric-icons/isometric-tennis-ball-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "game", "sports", "outline", "athletics", "recreation"]
+		},
+		"user-profile-card": {
+			"path": "/isometric-icons/isometric-user-profile-card.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "profile", "account", "identity"]
+		},
+		"laptop-computer-3d": {
+			"path": "/isometric-icons/isometric-laptop-computer-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "technology", "3d", "hardware", "computer", "device"]
+		},
+		"paper-receipt-outline": {
+			"path": "/isometric-icons/isometric-paper-receipt-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "document", "receipt", "invoice"]
+		},
+		"man-suit-mask-outline": {
+			"path": "/isometric-icons/isometric-man-suit-mask-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user", "outline", "profile", "business", "avatar"]
+		},
+		"moon-star-glow": {
+			"path": "/isometric-icons/isometric-moon-star-glow.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "night", "filled", "celestial", "light", "space"]
+		},
+		"megaphone-outline": {
+			"path": "/isometric-icons/isometric-megaphone-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "notification", "announcement", "media"]
+		},
+		"factory-building-outline": {
+			"path": "/isometric-icons/isometric-factory-building-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "industry", "outline", "manufacturing", "infrastructure", "business"]
+		},
+		"delivery-truck-outline": {
+			"path": "/isometric-icons/isometric-delivery-truck-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "logistics", "shipping"]
+		},
+		"bubble-circle-outline": {
+			"path": "/isometric-icons/isometric-bubble-circle-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "bubble", "chat", "communication"]
+		},
+		"video-play-button-frame": {
+			"path": "/isometric-icons/isometric-video-play-button-frame.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "video", "play", "entertainment"]
+		},
+		"chef-hat-outline": {
+			"path": "/isometric-icons/isometric-chef-hat-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "cooking", "outline", "profession", "food", "chef"]
+		},
+		"glass-drink-with-umbrella": {
+			"path": "/isometric-icons/isometric-glass-drink-with-umbrella.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "beverage", "filled", "cocktail", "refreshment", "drinkware"]
+		},
+		"arrow-up-intersection-filled": {
+			"path": "/isometric-icons/isometric-arrow-up-intersection-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "filled", "direction", "upward", "interface"]
+		},
+		"arrows-crossed-diagonal": {
+			"path": "/isometric-icons/isometric-arrows-crossed-diagonal.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "filled", "arrows", "interface", "directional"]
+		},
+		"hourglass-outline": {
+			"path": "/isometric-icons/isometric-hourglass-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "time", "outline", "loading", "progress", "waiting"]
+		},
+		"person-hat-outline": {
+			"path": "/isometric-icons/isometric-person-hat-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "avatar", "profile", "sports"]
+		},
+		"smartwatch-outline": {
+			"path": "/isometric-icons/isometric-smartwatch-outline.svg",
+			"width": 24,
+			"height": 2,
+			"tags": ["isometric", "3d", "wearable-tech", "outline", "device", "fitness", "technology"]
+		},
+		"city-hall-3d": {
+			"path": "/isometric-icons/isometric-city-hall-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "government", "3d", "building", "architecture", "municipal"]
+		},
+		"bag-paper-shopping": {
+			"path": "/isometric-icons/isometric-bag-paper-shopping.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "ecommerce", "filled", "shopping", "retail", "package"]
+		},
+		"pound-coin-outline": {
+			"path": "/isometric-icons/isometric-pound-coin-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "currency", "outline", "finance", "money", "economy"]
+		},
+		"law-attorney-working": {
+			"path": "/isometric-icons/isometric-law-attorney-working.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "filled", "law", "professional", "office"]
+		},
+		"child-avatar-outline": {
+			"path": "/isometric-icons/isometric-child-avatar-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "child", "avatar"]
+		},
+		"vault-close-filled": {
+			"path": "/isometric-icons/isometric-vault-close-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "bank", "filled", "security", "storage", "finance"]
+		},
+		"scissors-cutting": {
+			"path": "/isometric-icons/isometric-scissors-cutting.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "tools", "filled", "cutting", "crafts", "stationery"]
+		},
+		"galaxy-swirling-outline": {
+			"path": "/isometric-icons/isometric-galaxy-swirling-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "space", "outline", "cosmic", "universe", "abstract"]
+		},
+		"globe-outline": {
+			"path": "/isometric-icons/isometric-globe-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "geography", "outline", "map", "earth", "navigation"]
+		},
+		"stopwatch-outline": {
+			"path": "/isometric-icons/isometric-stopwatch-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "time", "outline", "measurement", "timer", "clock"]
+		},
+		"beach-umbrella-filled": {
+			"path": "/isometric-icons/isometric-beach-umbrella-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "outdoor", "filled", "vacation", "shade", "leisure"]
+		},
+		"ruler-measuring": {
+			"path": "/isometric-icons/isometric-ruler-measuring.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "engineering", "filled", "measurement", "tools", "design"]
+		},
+		"cloud-download-outline": {
+			"path": "/isometric-icons/isometric-cloud-download-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "cloud", "outline", "download", "data-transfer", "internet"]
+		},
+		"doctor-avatar-outline": {
+			"path": "/isometric-icons/isometric-doctor-avatar-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "medical", "profession", "avatar"]
+		},
+		"chart-bar-decrease": {
+			"path": "/isometric-icons/isometric-chart-bar-decrease.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "data-visualization", "filled", "analytics", "statistics"]
+		},
+		"surveillance-camera-outline": {
+			"path": "/isometric-icons/isometric-surveillance-camera-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "security", "outline", "monitoring", "camera", "surveillance"]
+		},
+		"person-hat-filled": {
+			"path": "/isometric-icons/isometric-person-hat-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "profile", "avatar", "sports"]
+		},
+		"clock-24-outline": {
+			"path": "/isometric-icons/isometric-clock-24-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "time", "outline", "schedule", "clock", "24-hours"]
+		},
+		"wrench-outline": {
+			"path": "/isometric-icons/isometric-wrench-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "tools", "outline", "repair", "mechanical", "hardware"]
+		},
+		"speaker-cube-outline": {
+			"path": "/isometric-icons/isometric-speaker-cube-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "audio", "outline", "music", "device", "technology"]
+		},
+		"person-silhouette-sporting": {
+			"path": "/isometric-icons/isometric-person-silhouette-sporting.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "fitness", "avatar", "profile"]
+		},
+		"cloud-rain-snow-filled": {
+			"path": "/isometric-icons/isometric-cloud-rain-snow-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "filled", "precipitation", "cloud", "climate"]
+		},
+		"businessman-suit-outline": {
+			"path": "/isometric-icons/isometric-businessman-suit-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "profile", "professional", "avatar"]
+		},
+		"swimming-goggles-outline": {
+			"path": "/isometric-icons/isometric-swimming-goggles-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "swimming", "accessory", "water-sport"]
+		},
+		"eight-ball-blue": {
+			"path": "/isometric-icons/isometric-eight-ball-blue.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "game", "sports", "filled", "billiards", "entertainment"]
+		},
+		"alarm-clock-outline": {
+			"path": "/isometric-icons/isometric-alarm-clock-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "time", "outline", "notification", "reminder", "schedule"]
+		},
+		"newspaper-open-outline": {
+			"path": "/isometric-icons/isometric-newspaper-open-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "news", "publication", "journalism"]
+		},
+		"man-seller-cap-outline": {
+			"path": "/isometric-icons/isometric-man-seller-cap-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "user", "seller", "service"]
+		},
+		"pencil-blue-filled": {
+			"path": "/isometric-icons/isometric-pencil-blue-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "editing", "writing", "design"]
+		},
+		"fax-machine-outline": {
+			"path": "/isometric-icons/isometric-fax-machine-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "office", "fax", "technology"]
+		},
+		"arrows-split-up": {
+			"path": "/isometric-icons/isometric-arrows-split-up.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "arrows", "directional", "interface"]
+		},
+		"tag-price-label": {
+			"path": "/isometric-icons/isometric-tag-price-label.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "commerce", "outline", "pricing", "label", "e-commerce"]
+		},
+		"music-note-filled": {
+			"path": "/isometric-icons/isometric-music-note-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "music", "filled", "audio", "entertainment", "sound"]
+		},
+		"graduation-cap-outline": {
+			"path": "/isometric-icons/isometric-graduation-cap-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "outline", "academic", "degree", "learning"]
+		},
+		"person-at-desk": {
+			"path": "/isometric-icons/isometric-person-at-desk.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "workspace", "filled", "office", "professional", "employee"]
+		},
+		"sign-warning-voltage": {
+			"path": "/isometric-icons/isometric-sign-warning-voltage.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "warning", "outline", "electricity", "safety", "alert"]
+		},
+		"volleyball-icon": {
+			"path": "/isometric-icons/isometric-volleyball-icon.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "filled", "ball", "game", "recreation"]
+		},
+		"vault-money-open": {
+			"path": "/isometric-icons/isometric-vault-money-open.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "bank", "filled", "finance", "savings", "security"]
+		},
+		"coin-yen-outline": {
+			"path": "/isometric-icons/isometric-coin-yen-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "currency", "outline", "finance", "money", "economy"]
+		},
+		"arrows-loop-4-direction": {
+			"path": "/isometric-icons/isometric-arrows-loop-4-direction.svg",
+			"width": 24,
+			"height": 7,
+			"tags": ["isometric", "3d", "interface", "filled", "arrows", "cycle", "navigation"]
+		},
+		"refrigerator-filled": {
+			"path": "/isometric-icons/isometric-refrigerator-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "home-appliance", "filled", "kitchen", "storage", "food-preservation"]
+		},
+		"building-shop-3d": {
+			"path": "/isometric-icons/isometric-building-shop-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "3d", "storefront", "commerce", "retail"]
+		},
+		"user-silhouette-filled": {
+			"path": "/isometric-icons/isometric-user-silhouette-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "profile", "avatar", "identity"]
+		},
+		"wind-direction-indicator": {
+			"path": "/isometric-icons/isometric-wind-direction-indicator.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "interface", "navigation", "indicator", "environmental"]
+		},
+		"user-avatar-outline": {
+			"path": "/isometric-icons/isometric-user-avatar-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "avatar", "identity"]
+		},
+		"coins-pile-chart-bar": {
+			"path": "/isometric-icons/isometric-coins-pile-chart-bar.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "filled", "data-visualization", "currency", "business"]
+		},
+		"coin-dollar-outline": {
+			"path": "/isometric-icons/isometric-coin-dollar-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "outline", "currency", "money", "e-commerce"]
+		},
+		"user-simple-outline": {
+			"path": "/isometric-icons/isometric-user-simple-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "account", "avatar"]
+		},
+		"ruler-straight-outline": {
+			"path": "/isometric-icons/isometric-ruler-straight-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "engineering", "outline", "measurement", "tool", "design"]
+		},
+		"toothbrush-holder-filled": {
+			"path": "/isometric-icons/isometric-toothbrush-holder-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "filled", "hygiene", "dental", "bathroom"]
+		},
+		"chart-bar-increase-3d": {
+			"path": "/isometric-icons/isometric-chart-bar-increase-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "data-visualization", "3d", "analytics", "business", "growth"]
+		},
+		"truck-container-transport": {
+			"path": "/isometric-icons/isometric-truck-container-transport.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "isometric", "vehicle", "cargo", "shipping"]
+		},
+		"shape-cube-3d": {
+			"path": "/isometric-icons/isometric-shape-cube-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "geometry", "3d", "shape", "design", "object"]
+		},
+		"user-profile-silhouette": {
+			"path": "/isometric-icons/isometric-user-profile-silhouette.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "avatar", "business"]
+		},
+		"letter-t-filled": {
+			"path": "/isometric-icons/isometric-letter-t-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "text", "filled", "alphabet", "character", "typography"]
+		},
+		"user-profile-outline": {
+			"path": "/isometric-icons/isometric-user-profile-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "avatar", "identity"]
+		},
+		"washing-machine-outline": {
+			"path": "/isometric-icons/isometric-washing-machine-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "home-appliance", "outline", "laundry", "cleaning", "machine"]
+		},
+		"padlock-open-outline": {
+			"path": "/isometric-icons/isometric-padlock-open-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "security", "outline", "lock", "protection", "access"]
+		},
+		"money-bundle-3d": {
+			"path": "/isometric-icons/isometric-money-bundle-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "3d", "currency", "banking", "ecommerce"]
+		},
+		"microscope-outline": {
+			"path": "/isometric-icons/isometric-microscope-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "science", "outline", "laboratory", "research", "equipment"]
+		},
+		"link-broken-outline": {
+			"path": "/isometric-icons/isometric-link-broken-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "connection", "error", "navigation"]
+		},
+		"user-book-filled": {
+			"path": "/isometric-icons/isometric-user-book-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "profile", "filled", "directory", "account", "contact"]
+		},
+		"gear-settings-outline": {
+			"path": "/isometric-icons/isometric-gear-settings-outline.svg",
+			"width": 6,
+			"height": 7,
+			"tags": ["isometric", "3d", "engineering", "outline", "mechanical", "settings", "configuration"]
+		},
+		"medicine-bottle-plus": {
+			"path": "/isometric-icons/isometric-medicine-bottle-plus.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "filled", "pharmacy", "add-item", "medicine"]
+		},
+		"at-symbol-outline": {
+			"path": "/isometric-icons/isometric-at-symbol-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "email", "internet", "symbol"]
+		},
+		"diploma-scroll-outline": {
+			"path": "/isometric-icons/isometric-diploma-scroll-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "outline", "certificate", "achievement", "document"]
+		},
+		"dumbbell-filled": {
+			"path": "/isometric-icons/isometric-dumbbell-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "fitness", "filled", "exercise", "gym", "weightlifting"]
+		},
+		"box-open-top": {
+			"path": "/isometric-icons/isometric-box-open-top.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "package", "shipping", "storage"]
+		},
+		"star-fish-outline": {
+			"path": "/isometric-icons/isometric-star-fish-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "marine-life", "outline", "sea-creature", "ocean", "nature"]
+		},
+		"chart-line-increase-filled": {
+			"path": "/isometric-icons/isometric-chart-line-increase-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "filled", "analytics", "growth", "data-visualization"]
+		},
+		"water-drop-filled": {
+			"path": "/isometric-icons/isometric-water-drop-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "nature", "filled", "liquid", "environment", "water"]
+		},
+		"stove-cooking-appliance": {
+			"path": "/isometric-icons/isometric-stove-cooking-appliance.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "kitchen", "appliance", "filled", "cooking", "home"]
+		},
+		"sign-fahrenheit": {
+			"path": "/isometric-icons/isometric-sign-fahrenheit.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "temperature", "weather", "filled", "measurement", "unit"]
+		},
+		"worker-avatar-outline": {
+			"path": "/isometric-icons/isometric-worker-avatar-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "worker", "avatar"]
+		},
+		"wifi-router-outline": {
+			"path": "/isometric-icons/isometric-wifi-router-outline.svg",
+			"width": 2,
+			"height": 20,
+			"tags": ["isometric", "3d", "networking", "outline", "internet", "hardware", "connectivity"]
+		},
+		"gavel-court-hammer": {
+			"path": "/isometric-icons/isometric-gavel-court-hammer.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "law", "filled", "justice", "court", "legal"]
+		},
+		"scale-balance-outline": {
+			"path": "/isometric-icons/isometric-scale-balance-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "law", "outline", "justice", "equity", "measurement"]
+		},
+		"doorbell-intercom-outline": {
+			"path": "/isometric-icons/isometric-doorbell-intercom-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "security", "home-automation", "notification"]
+		},
+		"hammer-tool-outline": {
+			"path": "/isometric-icons/isometric-hammer-tool-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "tools", "outline", "construction", "hardware", "repair"]
+		},
+		"cloud-rain-lightning-filled": {
+			"path": "/isometric-icons/isometric-cloud-rain-lightning-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "filled", "storm", "nature", "precipitation"]
+		},
+		"dental-tools-inspection": {
+			"path": "/isometric-icons/isometric-dental-tools-inspection.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "dentistry", "tools", "medical-equipment"]
+		},
+		"clipboard-clock-outline": {
+			"path": "/isometric-icons/isometric-clipboard-clock-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "time-management", "outline", "task", "schedule", "productivity"]
+		},
+		"cement-mixer-truck": {
+			"path": "/isometric-icons/isometric-cement-mixer-truck.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "3d", "construction", "vehicle", "cement"]
+		},
+		"board-monitor-heart-rate": {
+			"path": "/isometric-icons/isometric-board-monitor-heart-rate.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "monitor", "filled", "medical", "heartbeat"]
+		},
+		"snow-flake-outline": {
+			"path": "/isometric-icons/isometric-snow-flake-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "outline", "winter", "nature", "cold"]
+		},
+		"image-gallery-3d": {
+			"path": "/isometric-icons/isometric-image-gallery-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "3d", "gallery", "photos", "interface"]
+		},
+		"package-box-filled": {
+			"path": "/isometric-icons/isometric-package-box-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "shipping", "filled", "logistics", "delivery", "container"]
+		},
+		"slider-controls-filled": {
+			"path": "/isometric-icons/isometric-slider-controls-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "settings", "adjustment", "controls"]
+		},
+		"3d-cube-with-handle": {
+			"path": "/isometric-icons/isometric-3d-cube-with-handle.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "3d-modeling", "outline", "design", "cube", "object"]
+		},
+		"office-report-presentation-woman": {
+			"path": "/isometric-icons/isometric-office-report-presentation-woman.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "flat", "presentation", "report", "female-user"]
+		},
+		"star-outline": {
+			"path": "/isometric-icons/isometric-star-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "rating", "favorite", "symbol"]
+		},
+		"storefront": {
+			"path": "/isometric-icons/isometric-storefront.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "isometric", "shop", "retail", "commerce"]
+		},
+		"for-rent-sign": {
+			"path": "/isometric-icons/isometric-for-rent-sign.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "real-estate", "interface", "signage", "property", "advertisement"]
+		},
+		"checkered-flag-filled": {
+			"path": "/isometric-icons/isometric-checkered-flag-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "filled", "racing", "competition", "finish-line"]
+		},
+		"pillars-broken-3d": {
+			"path": "/isometric-icons/isometric-pillars-broken-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "engineering", "3d", "structure", "architecture", "broken"]
+		},
+		"arrows-loop-swap": {
+			"path": "/isometric-icons/isometric-arrows-loop-swap.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "exchange", "refresh", "interface"]
+		},
+		"pen-filled": {
+			"path": "/isometric-icons/isometric-pen-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "writing", "filled", "stationery", "office", "tool"]
+		},
+		"water-dispenser-filled": {
+			"path": "/isometric-icons/isometric-water-dispenser-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "furniture", "filled", "beverage", "office", "water-cooler"]
+		},
+		"podium-three-tiered": {
+			"path": "/isometric-icons/isometric-podium-three-tiered.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "competition", "3d", "awards", "ranking", "sports"]
+		},
+		"for-sale-sign": {
+			"path": "/isometric-icons/isometric-for-sale-sign.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "real-estate", "commerce", "advertisement", "minimal", "signage"]
+		},
+		"game-controller-filled": {
+			"path": "/isometric-icons/isometric-game-controller-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "gaming", "filled", "controller", "entertainment", "interface"]
+		},
+		"signal-wave-broadcast": {
+			"path": "/isometric-icons/isometric-signal-wave-broadcast.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "wireless", "signal", "broadcasting"]
+		},
+		"upload-arrow-box": {
+			"path": "/isometric-icons/isometric-upload-arrow-box.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "file-transfer", "filled", "upload", "data", "cloud-storage"]
+		},
+		"clapperboard-outline": {
+			"path": "/isometric-icons/isometric-clapperboard-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "film", "video", "entertainment"]
+		},
+		"arrows-direction-up-right-angled": {
+			"path": "/isometric-icons/isometric-arrows-direction-up-right-angled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "arrows", "movement", "directional"]
+		},
+		"arrow-right-outline": {
+			"path": "/isometric-icons/isometric-arrow-right-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "interface", "arrow"]
+		},
+		"folder-open-outline": {
+			"path": "/isometric-icons/isometric-folder-open-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "file-management", "outline", "document", "folder", "data-storage"]
+		},
+		"passport-book-globe": {
+			"path": "/isometric-icons/isometric-passport-book-globe.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "travel", "filled", "document", "global", "identity"]
+		},
+		"bulldozer-excavator-outline": {
+			"path": "/isometric-icons/isometric-bulldozer-excavator-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "construction", "outline", "heavy-machinery", "excavation", "engineering"]
+		},
+		"calculator-outline": {
+			"path": "/isometric-icons/isometric-calculator-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "software", "outline", "math", "interface", "tool"]
+		},
+		"signal-waves-outline": {
+			"path": "/isometric-icons/isometric-signal-waves-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "network", "wireless", "technology"]
+		},
+		"lifebuoy-outline": {
+			"path": "/isometric-icons/isometric-lifebuoy-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "safety", "outline", "rescue", "help", "emergency"]
+		},
+		"balance-scales-filled": {
+			"path": "/isometric-icons/isometric-balance-scales-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "law", "filled", "justice", "equity", "legal"]
+		},
+		"brick-wall-3d": {
+			"path": "/isometric-icons/isometric-brick-wall-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "construction", "3d", "building-material", "architecture", "block"]
+		},
+		"paint-roller-filled": {
+			"path": "/isometric-icons/isometric-paint-roller-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "tools", "filled", "painting", "home-improvement", "renovation"]
+		},
+		"glass-dome-with-laboratory-flask": {
+			"path": "/isometric-icons/isometric-glass-dome-with-laboratory-flask.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "science", "filled", "laboratory", "experiment", "glassware"]
+		},
+		"text-stack-outline": {
+			"path": "/isometric-icons/isometric-text-stack-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "text", "outline", "design", "typography", "interface"]
+		},
+		"arrows-3-split-direction": {
+			"path": "/isometric-icons/isometric-arrows-3-split-direction.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "arrows", "directional", "interface"]
+		},
+		"headphones-outline": {
+			"path": "/isometric-icons/isometric-headphones-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "audio", "outline", "music", "entertainment", "sound"]
+		},
+		"stacked-boxes-filled": {
+			"path": "/isometric-icons/isometric-stacked-boxes-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "storage", "filled", "warehouse", "containers", "logistics"]
+		},
+		"cloud-snow-filled": {
+			"path": "/isometric-icons/isometric-cloud-snow-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "filled", "cloud", "snow", "atmospheric"]
+		},
+		"cylinder-outline": {
+			"path": "/isometric-icons/isometric-cylinder-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "engineering", "outline", "container", "3d", "mechanical"]
+		},
+		"clipboard-timer-outline": {
+			"path": "/isometric-icons/isometric-clipboard-timer-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "productivity", "outline", "time-management", "checklist", "task-tracking"]
+		},
+		"book-open-outline": {
+			"path": "/isometric-icons/isometric-book-open-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "outline", "reading", "literature", "document"]
+		},
+		"microchip-outline": {
+			"path": "/isometric-icons/isometric-microchip-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "technology", "circuit", "component"]
+		},
+		"computer-mouse-filled": {
+			"path": "/isometric-icons/isometric-computer-mouse-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "filled", "input-device", "computer", "peripheral"]
+		},
+		"computer-monitor-3d": {
+			"path": "/isometric-icons/isometric-computer-monitor-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "3d", "display", "screen", "technology"]
+		},
+		"cart-outline": {
+			"path": "/isometric-icons/isometric-cart-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "commerce", "outline", "shopping", "ecommerce", "basket"]
+		},
+		"bowling-pins-group": {
+			"path": "/isometric-icons/isometric-bowling-pins-group.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "bowling", "game", "leisure"]
+		},
+		"arrows-swap-diagonal": {
+			"path": "/isometric-icons/isometric-arrows-swap-diagonal.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "filled", "arrows", "exchange", "interface"]
+		},
+		"map-location-outline": {
+			"path": "/isometric-icons/isometric-map-location-outline.svg",
+			"width": 15,
+			"height": 32,
+			"tags": ["isometric", "3d", "navigation", "outline", "map", "location", "geography"]
+		},
+		"box-close-filled": {
+			"path": "/isometric-icons/isometric-box-close-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "shipping", "filled", "package", "logistics", "delivery"]
+		},
+		"phone-dollar-transaction": {
+			"path": "/isometric-icons/isometric-phone-dollar-transaction.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "filled", "payment", "mobile", "ecommerce"]
+		},
+		"woman-nurse-outline": {
+			"path": "/isometric-icons/isometric-woman-nurse-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "medical", "profession", "nursing"]
+		},
+		"chart-line-arrow-up": {
+			"path": "/isometric-icons/isometric-chart-line-arrow-up.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "analytics", "growth", "data-visualization"]
+		},
+		"stacked-server-boxes": {
+			"path": "/isometric-icons/isometric-stacked-server-boxes.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "filled", "data-storage", "server", "infrastructure"]
+		},
+		"traffic-cone-filled": {
+			"path": "/isometric-icons/isometric-traffic-cone-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "traffic", "filled", "construction", "safety", "road-sign"]
+		},
+		"star-badge-outline": {
+			"path": "/isometric-icons/isometric-star-badge-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "award", "outline", "achievement", "recognition", "badge"]
+		},
+		"location-pin-outline": {
+			"path": "/isometric-icons/isometric-location-pin-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "map", "geolocation", "marker"]
+		},
+		"paperclip-intertwined": {
+			"path": "/isometric-icons/isometric-paperclip-intertwined.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "attachment", "document", "communication"]
+		},
+		"wind-turbine-outline": {
+			"path": "/isometric-icons/isometric-wind-turbine-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "energy", "outline", "renewable", "environment", "technology"]
+		},
+		"clipboard-document-outline": {
+			"path": "/isometric-icons/isometric-clipboard-document-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "document", "outline", "interface", "note-taking", "data-entry"]
+		},
+		"virtual-reality-headset-outline": {
+			"path": "/isometric-icons/isometric-virtual-reality-headset-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "technology", "outline", "gaming", "immersive", "headgear"]
+		},
+		"medicine-pill-capsule": {
+			"path": "/isometric-icons/isometric-medicine-pill-capsule.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "filled", "pharmaceutical", "medication", "tablet"]
+		},
+		"game-console-controller": {
+			"path": "/isometric-icons/isometric-game-console-controller.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "gaming", "hardware", "console", "controller", "entertainment"]
+		},
+		"arrows-cross-direction-filled": {
+			"path": "/isometric-icons/isometric-arrows-cross-direction-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "filled", "arrows", "directional", "interface"]
+		},
+		"bus-with-antenna": {
+			"path": "/isometric-icons/isometric-bus-with-antenna.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "isometric", "vehicle", "public-transport", "communication"]
+		},
+		"3d-plus-sign": {
+			"path": "/isometric-icons/isometric-3d-plus-sign.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "3d", "add", "symbol", "graphic"]
+		},
+		"construction-crane-with-boxes": {
+			"path": "/isometric-icons/isometric-construction-crane-with-boxes.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "construction", "outline", "engineering", "lifting", "cargo"]
+		},
+		"info-circle-outline": {
+			"path": "/isometric-icons/isometric-info-circle-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "information", "outline", "help", "interface", "tooltip"]
+		},
+		"recycling-shopping-bag": {
+			"path": "/isometric-icons/isometric-recycling-shopping-bag.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "environment", "filled", "sustainability", "commerce", "eco-friendly"]
+		},
+		"businessman-chart-increase": {
+			"path": "/isometric-icons/isometric-businessman-chart-increase.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "growth", "analytics", "presentation"]
+		},
+		"arrows-split-left-right-3d": {
+			"path": "/isometric-icons/isometric-arrows-split-left-right-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "3d", "arrows", "interface", "directional"]
+		},
+		"board-loading-circles": {
+			"path": "/isometric-icons/isometric-board-loading-circles.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "loading", "progress", "animation"]
+		},
+		"barrier-striped": {
+			"path": "/isometric-icons/isometric-barrier-striped.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "construction", "outline", "safety", "traffic", "warning"]
+		},
+		"heart-two-tone": {
+			"path": "/isometric-icons/isometric-heart-two-tone.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "love", "emotion", "symbol"]
+		},
+		"theater-mask-outline": {
+			"path": "/isometric-icons/isometric-theater-mask-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "entertainment", "outline", "drama", "theater", "performance"]
+		},
+		"dna-helix": {
+			"path": "/isometric-icons/isometric-dna-helix.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "biology", "outline", "genetics", "science", "molecular"]
+		},
+		"briefcase-office-filled": {
+			"path": "/isometric-icons/isometric-briefcase-office-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "filled", "office", "portfolio", "work"]
+		},
+		"bank-building-dollar-sign": {
+			"path": "/isometric-icons/isometric-bank-building-dollar-sign.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "business", "outline", "bank", "money"]
+		},
+		"screen-document-outline": {
+			"path": "/isometric-icons/isometric-screen-document-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "document", "display", "file"]
+		},
+		"magic-hat-with-wand": {
+			"path": "/isometric-icons/isometric-magic-hat-with-wand.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "entertainment", "filled", "magic", "performance", "illusion"]
+		},
+		"music-player-outline": {
+			"path": "/isometric-icons/isometric-music-player-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "music", "player", "device"]
+		},
+		"cargo-train-flat": {
+			"path": "/isometric-icons/isometric-cargo-train-flat.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "flat", "cargo", "railway", "vehicle"]
+		},
+		"toaster-outline": {
+			"path": "/isometric-icons/isometric-toaster-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "appliance", "outline", "kitchen", "cooking", "home"]
+		},
+		"grid-layout-outline": {
+			"path": "/isometric-icons/isometric-grid-layout-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "layout", "design", "grid"]
+		},
+		"arrows-4-outlined": {
+			"path": "/isometric-icons/isometric-arrows-4-outlined.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "arrows", "direction", "interface"]
+		},
+		"calendar-outline": {
+			"path": "/isometric-icons/isometric-calendar-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "time-management", "outline", "date", "schedule", "planning"]
+		},
+		"baseball-outline": {
+			"path": "/isometric-icons/isometric-baseball-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "ball", "game", "recreation"]
+		},
+		"man-patient-bandage-outline": {
+			"path": "/isometric-icons/isometric-man-patient-bandage-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "medical", "patient", "bandage"]
+		},
+		"beach-ball-outline": {
+			"path": "/isometric-icons/isometric-beach-ball-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "recreation", "summer", "play"]
+		},
+		"thermometer-filled": {
+			"path": "/isometric-icons/isometric-thermometer-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "filled", "temperature", "measurement", "science"]
+		},
+		"rugby-ball-outline": {
+			"path": "/isometric-icons/isometric-rugby-ball-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "game", "football", "athletics"]
+		},
+		"steering-wheel-outline": {
+			"path": "/isometric-icons/isometric-steering-wheel-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "driving", "automotive"]
+		},
+		"coffee-machine-filled": {
+			"path": "/isometric-icons/isometric-coffee-machine-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "appliance", "filled", "beverage", "kitchen", "coffee-maker"]
+		},
+		"construction-worker-outline": {
+			"path": "/isometric-icons/isometric-construction-worker-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "profession", "outline", "worker", "construction", "avatar"]
+		},
+		"bell-outline": {
+			"path": "/isometric-icons/isometric-bell-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "notification", "outline", "alert", "sound", "interface"]
+		},
+		"magnifying-glass-search": {
+			"path": "/isometric-icons/isometric-magnifying-glass-search.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "search", "zoom", "exploration"]
+		},
+		"cargo-container-3d": {
+			"path": "/isometric-icons/isometric-cargo-container-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "shipping", "3d", "logistics", "transportation", "freight"]
+		},
+		"money-dollar-bill-3d": {
+			"path": "/isometric-icons/isometric-money-dollar-bill-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "3d", "currency", "banking", "ecommerce"]
+		},
+		"arrows-3-circular-outline": {
+			"path": "/isometric-icons/isometric-arrows-3-circular-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "refresh", "cycle", "interface"]
+		},
+		"stacked-boxes-outline": {
+			"path": "/isometric-icons/isometric-stacked-boxes-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "storage", "outline", "container", "organization", "box"]
+		},
+		"ice-skates-outline": {
+			"path": "/isometric-icons/isometric-ice-skates-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "recreation", "winter", "hobby"]
+		},
+		"newspaper-outline": {
+			"path": "/isometric-icons/isometric-newspaper-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "news", "publication", "information"]
+		},
+		"arrows-3-directional": {
+			"path": "/isometric-icons/isometric-arrows-3-directional.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "arrows", "direction", "interface"]
+		},
+		"user-glasses-filled": {
+			"path": "/isometric-icons/isometric-user-glasses-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "profile", "avatar", "person"]
+		},
+		"window-open-3d": {
+			"path": "/isometric-icons/isometric-window-open-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "architecture", "3d", "home", "interior", "design"]
+		},
+		"cloud-rain-light": {
+			"path": "/isometric-icons/isometric-cloud-rain-light.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "filled", "precipitation", "cloud", "rain"]
+		},
+		"dump-truck-outline": {
+			"path": "/isometric-icons/isometric-dump-truck-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "construction", "cargo"]
+		},
+		"baseball-cap-outline": {
+			"path": "/isometric-icons/isometric-baseball-cap-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "apparel", "outline", "headwear", "fashion", "clothing"]
+		},
+		"desktop-computer-with-keyboard-and-mouse": {
+			"path": "/isometric-icons/isometric-desktop-computer-with-keyboard-and-mouse.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "technology", "isometric", "computer", "hardware", "office"]
+		},
+		"shield-outline": {
+			"path": "/isometric-icons/isometric-shield-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "security", "outline", "protection", "safety", "interface"]
+		},
+		"arrows-four-directional": {
+			"path": "/isometric-icons/isometric-arrows-four-directional.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "arrows", "directional", "interface"]
+		},
+		"clipboard-list-outline": {
+			"path": "/isometric-icons/isometric-clipboard-list-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "documentation", "task-list", "note-taking"]
+		},
+		"arrow-curved-to-right": {
+			"path": "/isometric-icons/isometric-arrow-curved-to-right.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "directional", "arrow", "interface"]
+		},
+		"laptop-open-list": {
+			"path": "/isometric-icons/isometric-laptop-open-list.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "filled", "technology", "device", "screen"]
+		},
+		"man-security-officer-outline": {
+			"path": "/isometric-icons/isometric-man-security-officer-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "security", "professional", "avatar"]
+		},
+		"cd-disk-outline": {
+			"path": "/isometric-icons/isometric-cd-disk-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "music", "disk", "storage"]
+		},
+		"compass-outline": {
+			"path": "/isometric-icons/isometric-compass-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "travel", "map"]
+		},
+		"stacked-books-filled": {
+			"path": "/isometric-icons/isometric-stacked-books-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "filled", "library", "reading", "knowledge"]
+		},
+		"money-bag-dollar-filled": {
+			"path": "/isometric-icons/isometric-money-bag-dollar-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "filled", "currency", "business", "ecommerce"]
+		},
+		"shape-cone-filled": {
+			"path": "/isometric-icons/isometric-shape-cone-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "engineering", "filled", "geometry", "3d", "shape"]
+		},
+		"person-silhouette-blue": {
+			"path": "/isometric-icons/isometric-person-silhouette-blue.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "avatar", "profile", "character"]
+		},
+		"soccer-ball-outline": {
+			"path": "/isometric-icons/isometric-soccer-ball-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "football", "game", "recreation"]
+		},
+		"door-with-window-outline": {
+			"path": "/isometric-icons/isometric-door-with-window-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "entrance", "access", "architecture"]
+		},
+		"receipt-printer-machine": {
+			"path": "/isometric-icons/isometric-receipt-printer-machine.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "hardware", "printing", "receipt", "commerce"]
+		},
+		"headset-outline": {
+			"path": "/isometric-icons/isometric-headset-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "audio", "outline", "communication", "headphones", "technology"]
+		},
+		"email-envelope-outline": {
+			"path": "/isometric-icons/isometric-email-envelope-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "message", "mail", "notification"]
+		},
+		"basketball-outline": {
+			"path": "/isometric-icons/isometric-basketball-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "game", "ball", "basketball"]
+		},
+		"start-finish-line": {
+			"path": "/isometric-icons/isometric-start-finish-line.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "outline", "race", "competition", "event"]
+		},
+		"boat-yacht-filled": {
+			"path": "/isometric-icons/isometric-boat-yacht-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "filled", "marine", "recreation", "watercraft"]
+		},
+		"security-key-outline": {
+			"path": "/isometric-icons/isometric-security-key-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "security", "outline", "authentication", "access-control", "key"]
+		},
+		"kettle-outline": {
+			"path": "/isometric-icons/isometric-kettle-outline.svg",
+			"width": 25,
+			"height": 2,
+			"tags": ["isometric", "3d", "kitchenware", "outline", "appliance", "cooking", "beverage"]
+		},
+		"house-3d-outline": {
+			"path": "/isometric-icons/isometric-house-3d-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "real-estate", "outline", "home", "building", "architecture"]
+		},
+		"paint-palette-with-brush": {
+			"path": "/isometric-icons/isometric-paint-palette-with-brush.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "art", "design", "filled", "creative", "tools"]
+		},
+		"cargo-ship-filled": {
+			"path": "/isometric-icons/isometric-cargo-ship-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "filled", "shipping", "logistics", "marine"]
+		},
+		"map-route-outline": {
+			"path": "/isometric-icons/isometric-map-route-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "map", "route", "travel"]
+		},
+		"leaf-outline": {
+			"path": "/isometric-icons/isometric-leaf-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "nature", "outline", "plant", "environment", "eco-friendly"]
+		},
+		"laptop-open-document": {
+			"path": "/isometric-icons/isometric-laptop-open-document.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "technology", "outline", "device", "computer", "software"]
+		},
+		"rolled-towel-outline": {
+			"path": "/isometric-icons/isometric-rolled-towel-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "home", "outline", "bathroom", "towel", "cleaning"]
+		},
+		"wood-stack-layered": {
+			"path": "/isometric-icons/isometric-wood-stack-layered.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "engineering", "filled", "construction", "wood", "stacking"]
+		},
+		"money-bundle-stack-3d": {
+			"path": "/isometric-icons/isometric-money-bundle-stack-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "3d", "currency", "banking", "ecommerce"]
+		},
+		"atom-outline": {
+			"path": "/isometric-icons/isometric-atom-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "science", "outline", "atom", "molecule", "chemistry"]
+		},
+		"image-frame-outline": {
+			"path": "/isometric-icons/isometric-image-frame-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "picture", "gallery", "photo"]
+		},
+		"gear-3d-outline": {
+			"path": "/isometric-icons/isometric-gear-3d-outline.svg",
+			"width": 13,
+			"height": 14,
+			"tags": ["isometric", "3d", "engineering", "3d", "mechanical", "settings", "hardware"]
+		},
+		"toolbox-with-wrench-and-screwdriver": {
+			"path": "/isometric-icons/isometric-toolbox-with-wrench-and-screwdriver.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "tools", "maintenance", "filled", "repair", "hardware"]
+		},
+		"tape-measure-rolled": {
+			"path": "/isometric-icons/isometric-tape-measure-rolled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "tools", "filled", "measurement", "construction", "engineering"]
+		},
+		"flag-pole-with-banner": {
+			"path": "/isometric-icons/isometric-flag-pole-with-banner.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "marker", "signal", "event"]
+		},
+		"car-taxi-outline": {
+			"path": "/isometric-icons/isometric-car-taxi-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "taxi", "travel"]
+		},
+		"computer-monitor-flat": {
+			"path": "/isometric-icons/isometric-computer-monitor-flat.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "flat", "display", "screen", "technology"]
+		},
+		"cart-subtract-outline": {
+			"path": "/isometric-icons/isometric-cart-subtract-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "ecommerce", "outline", "shopping", "remove-item", "cart-management"]
+		},
+		"cloud-footprint-outline": {
+			"path": "/isometric-icons/isometric-cloud-footprint-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "environment", "outline", "nature", "sustainability", "cloud"]
+		},
+		"cloche-outline": {
+			"path": "/isometric-icons/isometric-cloche-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "food", "outline", "service", "dining", "restaurant"]
+		},
+		"scroll-paper-outline": {
+			"path": "/isometric-icons/isometric-scroll-paper-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "document", "outline", "writing", "paper", "note-taking"]
+		},
+		"building-3d": {
+			"path": "/isometric-icons/isometric-building-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "architecture", "3d", "isometric", "design", "construction"]
+		},
+		"fish-outline": {
+			"path": "/isometric-icons/isometric-fish-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "animal", "outline", "aquatic", "marine", "nature"]
+		},
+		"arrows-loop-outline": {
+			"path": "/isometric-icons/isometric-arrows-loop-outline.svg",
+			"width": 24,
+			"height": 7,
+			"tags": ["isometric", "3d", "interface", "outline", "arrows", "cycle", "refresh"]
+		},
+		"chart-increase-filled": {
+			"path": "/isometric-icons/isometric-chart-increase-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "filled", "analytics", "growth", "data-visualization"]
+		},
+		"glasses-outline": {
+			"path": "/isometric-icons/isometric-glasses-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "accessories", "outline", "vision", "eyewear", "fashion"]
+		},
+		"medical-heart-rate-monitor-outline": {
+			"path": "/isometric-icons/isometric-medical-heart-rate-monitor-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "monitor", "vital-signs", "medical"]
+		},
+		"graduation-cap-filled": {
+			"path": "/isometric-icons/isometric-graduation-cap-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "filled", "academic", "cap", "scholarship"]
+		},
+		"law-books-stack": {
+			"path": "/isometric-icons/isometric-law-books-stack.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "law", "books", "education", "filled", "library"]
+		},
+		"three-vertical-bars-outline": {
+			"path": "/isometric-icons/isometric-three-vertical-bars-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "navigation", "menu", "bars"]
+		},
+		"syringe-filled": {
+			"path": "/isometric-icons/isometric-syringe-filled.svg",
+			"width": 12,
+			"height": 16,
+			"tags": ["isometric", "3d", "healthcare", "filled", "medical", "injection", "pharmacy"]
+		},
+		"warehouse-building": {
+			"path": "/isometric-icons/isometric-warehouse-building.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "architecture", "isometric", "storage", "building", "warehouse"]
+		},
+		"electric-fan-outline": {
+			"path": "/isometric-icons/isometric-electric-fan-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "appliance", "cooling", "fan"]
+		},
+		"monorail-train": {
+			"path": "/isometric-icons/isometric-monorail-train.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "isometric", "vehicle", "rail", "public-transport"]
+		},
+		"arrow-loop-outline": {
+			"path": "/isometric-icons/isometric-arrow-loop-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "refresh", "cycle", "interface"]
+		},
+		"pill-container-filled": {
+			"path": "/isometric-icons/isometric-pill-container-filled.svg",
+			"width": 23,
+			"height": 29,
+			"tags": ["isometric", "3d", "healthcare", "filled", "medicine", "container", "pharmacy"]
+		},
+		"arrows-split-upward": {
+			"path": "/isometric-icons/isometric-arrows-split-upward.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "arrows", "direction", "interface"]
+		},
+		"circus-tent-filled": {
+			"path": "/isometric-icons/isometric-circus-tent-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "entertainment", "filled", "festival", "amusement", "carnival"]
+		},
+		"recycling-bin-outline": {
+			"path": "/isometric-icons/isometric-recycling-bin-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "environment", "outline", "waste-management", "recycling", "container"]
+		},
+		"user-network-connected": {
+			"path": "/isometric-icons/isometric-user-network-connected.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "social", "outline", "profile", "connection", "community"]
+		},
+		"book-closed-outline": {
+			"path": "/isometric-icons/isometric-book-closed-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "literature", "outline", "reading", "education", "library"]
+		},
+		"medical-star-plus": {
+			"path": "/isometric-icons/isometric-medical-star-plus.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "filled", "symbol", "emergency", "medical-assistance"]
+		},
+		"cursor-pointer-filled": {
+			"path": "/isometric-icons/isometric-cursor-pointer-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "pointer", "navigation", "cursor"]
+		},
+		"link-broken-repair": {
+			"path": "/isometric-icons/isometric-link-broken-repair.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "connection", "repair", "networking"]
+		},
+		"picture-frame-outline": {
+			"path": "/isometric-icons/isometric-picture-frame-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "image", "gallery", "photography"]
+		},
+		"bus-transport-outline": {
+			"path": "/isometric-icons/isometric-bus-transport-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "public-transport", "bus"]
+		},
+		"arrow-up-intersection-center": {
+			"path": "/isometric-icons/isometric-arrow-up-intersection-center.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "movement", "interface"]
+		},
+		"data-storage-cylinder": {
+			"path": "/isometric-icons/isometric-data-storage-cylinder.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "database", "filled", "storage", "technology", "information"]
+		},
+		"gauge-speedometer-filled": {
+			"path": "/isometric-icons/isometric-gauge-speedometer-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "dashboard", "filled", "measurement", "performance", "indicator"]
+		},
+		"necktie-striped": {
+			"path": "/isometric-icons/isometric-necktie-striped.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "fashion", "formal", "accessory", "clothing"]
+		},
+		"speech-bubble-outline": {
+			"path": "/isometric-icons/isometric-speech-bubble-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "dialogue", "chat", "message"]
+		},
+		"stethoscope-outline": {
+			"path": "/isometric-icons/isometric-stethoscope-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "medical", "diagnostic", "equipment"]
+		},
+		"person-arrow-up": {
+			"path": "/isometric-icons/isometric-person-arrow-up.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "filled", "user", "direction", "interface"]
+		},
+		"man-seller-cap-filled": {
+			"path": "/isometric-icons/isometric-man-seller-cap-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "filled", "seller", "worker", "avatar"]
+		},
+		"atm-machine-cash-withdrawal": {
+			"path": "/isometric-icons/isometric-atm-machine-cash-withdrawal.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "bank", "3d", "finance", "transaction", "money"]
+		},
+		"sign-warning-caution-outline": {
+			"path": "/isometric-icons/isometric-sign-warning-caution-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "alert", "outline", "safety", "notification", "warning-sign"]
+		},
+		"dumbbell-lifted": {
+			"path": "/isometric-icons/isometric-dumbbell-lifted.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "fitness", "outline", "exercise", "strength-training", "weightlifting"]
+		},
+		"battery-charging-outline": {
+			"path": "/isometric-icons/isometric-battery-charging-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "energy", "outline", "battery", "power", "technology"]
+		},
+		"vacuum-cleaner-outline": {
+			"path": "/isometric-icons/isometric-vacuum-cleaner-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "cleaning", "outline", "appliance", "home", "household"]
+		},
+		"car-icon-outline": {
+			"path": "/isometric-icons/isometric-car-icon-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "automobile", "travel"]
+		},
+		"keyboard-outline": {
+			"path": "/isometric-icons/isometric-keyboard-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "input", "device", "computer"]
+		},
+		"trophy-outline": {
+			"path": "/isometric-icons/isometric-trophy-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "award", "outline", "achievement", "competition", "sports"]
+		},
+		"recycle-arrow-loop": {
+			"path": "/isometric-icons/isometric-recycle-arrow-loop.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "environment", "filled", "recycling", "sustainability", "circular"]
+		},
+		"plug-connected-outline": {
+			"path": "/isometric-icons/isometric-plug-connected-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "electricity", "connection", "power-supply"]
+		},
+		"trash-bin-filled": {
+			"path": "/isometric-icons/isometric-trash-bin-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "waste", "filled", "cleaning", "disposal", "container"]
+		},
+		"speech-bubbles-outline": {
+			"path": "/isometric-icons/isometric-speech-bubbles-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "chat", "message", "dialogue"]
+		},
+		"file-folder-open": {
+			"path": "/isometric-icons/isometric-file-folder-open.svg",
+			"width": 15,
+			"height": 32,
+			"tags": ["isometric", "3d", "file-management", "outline", "folder", "documents", "interface"]
+		},
+		"sign-celsius-outline": {
+			"path": "/isometric-icons/isometric-sign-celsius-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "temperature", "outline", "measurement", "climate"]
+		},
+		"salt-shaker-outline": {
+			"path": "/isometric-icons/isometric-salt-shaker-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "kitchen", "outline", "cooking", "seasoning", "food"]
+		},
+		"recycle-arrow-spring": {
+			"path": "/isometric-icons/isometric-recycle-arrow-spring.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "environment", "filled", "sustainability", "recycling", "circular-economy"]
+		},
+		"computer-monitor-outline": {
+			"path": "/isometric-icons/isometric-computer-monitor-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "display", "screen", "technology"]
+		},
+		"radio-retro-filled": {
+			"path": "/isometric-icons/isometric-radio-retro-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "filled", "audio", "communication", "entertainment"]
+		},
+		"download-box-arrow": {
+			"path": "/isometric-icons/isometric-download-box-arrow.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "file-transfer", "filled", "download", "data", "cloud-storage"]
+		},
+		"chef-hat-person-outline": {
+			"path": "/isometric-icons/isometric-chef-hat-person-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "food", "cooking", "outline", "profession", "chef"]
+		},
+		"door-open-outline": {
+			"path": "/isometric-icons/isometric-door-open-outline.svg",
+			"width": 30,
+			"height": 64,
+			"tags": ["isometric", "3d", "interface", "outline", "entry", "navigation", "architecture"]
+		},
+		"fuel-pump-outline": {
+			"path": "/isometric-icons/isometric-fuel-pump-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "fuel", "gas-station", "refueling"]
+		},
+		"finish-line-banner": {
+			"path": "/isometric-icons/isometric-finish-line-banner.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "interface", "event", "competition", "marker"]
+		},
+		"photo-camera-outline": {
+			"path": "/isometric-icons/isometric-photo-camera-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "photography", "outline", "camera", "image-capture", "media"]
+		},
+		"police-car-outline": {
+			"path": "/isometric-icons/isometric-police-car-outline.svg",
+			"width": 24,
+			"height": 0,
+			"tags": ["isometric", "3d", "transportation", "outline", "law-enforcement", "vehicle", "emergency"]
+		},
+		"arrow-loop-refresh": {
+			"path": "/isometric-icons/isometric-arrow-loop-refresh.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "refresh", "circular", "interface"]
+		},
+		"bullseye-target-filled": {
+			"path": "/isometric-icons/isometric-bullseye-target-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "filled", "target", "aim", "accuracy"]
+		},
+		"chart-bar-3d": {
+			"path": "/isometric-icons/isometric-chart-bar-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "data-visualization", "3d", "analytics", "business", "statistics"]
+		},
+		"leaf-outline-blue": {
+			"path": "/isometric-icons/isometric-leaf-outline-blue.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "nature", "outline", "plant", "environment", "iconography"]
+		},
+		"clipboard-check-filled": {
+			"path": "/isometric-icons/isometric-clipboard-check-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "productivity", "filled", "clipboard", "task", "checkmark"]
+		},
+		"book-holy-bible-filled": {
+			"path": "/isometric-icons/isometric-book-holy-bible-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "religion", "filled", "scripture", "text", "literature"]
+		},
+		"bowling-ball-and-pins": {
+			"path": "/isometric-icons/isometric-bowling-ball-and-pins.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "filled", "bowling", "game", "recreation"]
+		},
+		"medicine-pill-outline": {
+			"path": "/isometric-icons/isometric-medicine-pill-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "pharmaceutical", "medicine", "tablet"]
+		},
+		"artist-portrait-outline": {
+			"path": "/isometric-icons/isometric-artist-portrait-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "creative", "avatar"]
+		},
+		"wifi-signal-outline": {
+			"path": "/isometric-icons/isometric-wifi-signal-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "networking", "outline", "connectivity", "signal", "internet"]
+		},
+		"globe-network-outline": {
+			"path": "/isometric-icons/isometric-globe-network-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "geography", "outline", "global", "connectivity", "internet"]
+		},
+		"test-tube-water-filled": {
+			"path": "/isometric-icons/isometric-test-tube-water-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "science", "filled", "laboratory", "chemistry", "liquid"]
+		},
+		"house-solar-windmill": {
+			"path": "/isometric-icons/isometric-house-solar-windmill.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "energy", "renewable", "sustainability", "home", "green-tech"]
+		},
+		"gas-pump-outline": {
+			"path": "/isometric-icons/isometric-gas-pump-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "fuel", "outline", "service-station", "refueling", "transportation"]
+		},
+		"trash-bin-outline": {
+			"path": "/isometric-icons/isometric-trash-bin-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "delete", "waste", "cleaning"]
+		},
+		"house-outline": {
+			"path": "/isometric-icons/isometric-house-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "architecture", "outline", "home", "building", "real-estate"]
+		},
+		"id-card-outline": {
+			"path": "/isometric-icons/isometric-id-card-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "identity", "outline", "profile", "document", "verification"]
+		},
+		"bicycle-outline": {
+			"path": "/isometric-icons/isometric-bicycle-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "cycling", "recreation"]
+		},
+		"moon-half-filled": {
+			"path": "/isometric-icons/isometric-moon-half-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "astronomy", "filled", "night", "celestial", "moon-phase"]
+		},
+		"recycle-arrows-outline": {
+			"path": "/isometric-icons/isometric-recycle-arrows-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "environment", "outline", "sustainability", "recycling", "eco-friendly"]
+		},
+		"memory-card-outline": {
+			"path": "/isometric-icons/isometric-memory-card-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "storage", "data", "electronics"]
+		},
+		"disk-icon-filled": {
+			"path": "/isometric-icons/isometric-disk-icon-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "filled", "storage", "data", "music"]
+		},
+		"chart-pie-3d": {
+			"path": "/isometric-icons/isometric-chart-pie-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "data-visualization", "3d", "business", "analytics", "statistics"]
+		},
+		"arrows-swap-horizontal": {
+			"path": "/isometric-icons/isometric-arrows-swap-horizontal.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "filled", "arrows", "interface", "exchange"]
+		},
+		"sun-glasses-filled": {
+			"path": "/isometric-icons/isometric-sun-glasses-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "accessories", "filled", "fashion", "eyewear", "style"]
+		},
+		"hot-air-balloon-outline": {
+			"path": "/isometric-icons/isometric-hot-air-balloon-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "travel", "outline", "adventure", "transportation", "leisure"]
+		},
+		"lightbulb-idea-outline": {
+			"path": "/isometric-icons/isometric-lightbulb-idea-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "idea", "outline", "creativity", "innovation", "concept"]
+		},
+		"bitten-apple-outline": {
+			"path": "/isometric-icons/isometric-bitten-apple-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "food", "outline", "fruit", "snack", "healthy-eating"]
+		},
+		"medical-case-filled": {
+			"path": "/isometric-icons/isometric-medical-case-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "filled", "first-aid", "medical", "kit"]
+		},
+		"warehouse-building-outline": {
+			"path": "/isometric-icons/isometric-warehouse-building-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "architecture", "outline", "storage", "building", "logistics"]
+		},
+		"stacked-bars-3d": {
+			"path": "/isometric-icons/isometric-stacked-bars-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "data-visualization", "3d", "charts", "analytics", "business-intelligence"]
+		},
+		"cloud-upload-outline": {
+			"path": "/isometric-icons/isometric-cloud-upload-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "cloud", "upload", "outline", "data-transfer", "internet"]
+		},
+		"credit-cards-dual": {
+			"path": "/isometric-icons/isometric-credit-cards-dual.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "filled", "payment", "banking", "ecommerce"]
+		},
+		"bubble-messages-outline": {
+			"path": "/isometric-icons/isometric-bubble-messages-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "chat", "message", "interface"]
+		},
+		"electric-vehicle-charging": {
+			"path": "/isometric-icons/isometric-electric-vehicle-charging.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "filled", "electric-car", "charging-station", "automotive"]
+		},
+		"factory-outline": {
+			"path": "/isometric-icons/isometric-factory-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "industry", "outline", "manufacturing", "production", "engineering"]
+		},
+		"liquid-dropper-filled": {
+			"path": "/isometric-icons/isometric-liquid-dropper-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "tool", "pipette", "liquid-extraction"]
+		},
+		"pencil-outline": {
+			"path": "/isometric-icons/isometric-pencil-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "drawing", "outline", "art", "stationery", "writing"]
+		},
+		"star-outline-blue": {
+			"path": "/isometric-icons/isometric-star-outline-blue.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "rating", "favorite", "symbol"]
+		},
+		"user-add-outline": {
+			"path": "/isometric-icons/isometric-user-add-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "account", "add"]
+		},
+		"cloud-rain-outline": {
+			"path": "/isometric-icons/isometric-cloud-rain-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "outline", "precipitation", "cloud", "nature"]
+		},
+		"shape-spheroid-base": {
+			"path": "/isometric-icons/isometric-shape-spheroid-base.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "3d", "shape", "design", "abstract"]
+		},
+		"calculator-abacus-3d": {
+			"path": "/isometric-icons/isometric-calculator-abacus-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "3d", "math", "learning", "tools"]
+		},
+		"website-page-outline": {
+			"path": "/isometric-icons/isometric-website-page-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "web", "document", "page"]
+		},
+		"user-tuxedo-outline": {
+			"path": "/isometric-icons/isometric-user-tuxedo-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "business", "avatar"]
+		},
+		"clock-outline": {
+			"path": "/isometric-icons/isometric-clock-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "time", "outline", "schedule", "measurement", "interface"]
+		},
+		"building-hospital": {
+			"path": "/isometric-icons/isometric-building-hospital.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "isometric", "building", "medical", "facility"]
+		},
+		"delivery-van-outline": {
+			"path": "/isometric-icons/isometric-delivery-van-outline.svg",
+			"width": 2,
+			"height": 0,
+			"tags": ["isometric", "3d", "transportation", "outline", "vehicle", "delivery", "logistics"]
+		},
+		"mobile-phone-message": {
+			"path": "/isometric-icons/isometric-mobile-phone-message.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "filled", "mobile", "message", "interface"]
+		},
+		"cloud-rain-lightning-outline": {
+			"path": "/isometric-icons/isometric-cloud-rain-lightning-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "outline", "storm", "nature", "clouds"]
+		},
+		"chat-message-bubble": {
+			"path": "/isometric-icons/isometric-chat-message-bubble.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "message", "text", "conversation"]
+		},
+		"rolled-paper-certificate-with-ribbon": {
+			"path": "/isometric-icons/isometric-rolled-paper-certificate-with-ribbon.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "certificate", "filled", "document", "award"]
+		},
+		"atom-symbol-outline": {
+			"path": "/isometric-icons/isometric-atom-symbol-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "science", "outline", "atom", "physics", "education"]
+		},
+		"sign-male-outline": {
+			"path": "/isometric-icons/isometric-sign-male-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "gender", "outline", "male", "symbol", "interface"]
+		},
+		"link-double-outline": {
+			"path": "/isometric-icons/isometric-link-double-outline.svg",
+			"width": 24,
+			"height": 2,
+			"tags": ["isometric", "3d", "interface", "outline", "connection", "chain", "navigation"]
+		},
+		"cloud-sparkle": {
+			"path": "/isometric-icons/isometric-cloud-sparkle.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "filled", "cloud", "shine", "night-sky"]
+		},
+		"arrow-up-outline": {
+			"path": "/isometric-icons/isometric-arrow-up-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "movement", "interface"]
+		},
+		"user-bowtie-filled": {
+			"path": "/isometric-icons/isometric-user-bowtie-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "profile", "avatar", "person"]
+		},
+		"beer-mug-filled": {
+			"path": "/isometric-icons/isometric-beer-mug-filled.svg",
+			"width": 24,
+			"height": 23,
+			"tags": ["isometric", "3d", "beverage", "filled", "alcohol", "drink", "food"]
+		},
+		"suitcase-outline": {
+			"path": "/isometric-icons/isometric-suitcase-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "travel", "outline", "luggage", "transportation", "bag"]
+		},
+		"sunshine-outline": {
+			"path": "/isometric-icons/isometric-sunshine-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "outline", "nature", "light", "daytime"]
+		},
+		"speedometer-outline": {
+			"path": "/isometric-icons/isometric-speedometer-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "measurement", "performance", "gauge"]
+		},
+		"woman-office-avatar": {
+			"path": "/isometric-icons/isometric-woman-office-avatar.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "profile", "user", "female"]
+		},
+		"puzzle-piece-interlocking": {
+			"path": "/isometric-icons/isometric-puzzle-piece-interlocking.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "connection", "game", "problem-solving"]
+		},
+		"medical-report-document": {
+			"path": "/isometric-icons/isometric-medical-report-document.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "document", "outline", "report", "medical-records"]
+		},
+		"film-strip-outline": {
+			"path": "/isometric-icons/isometric-film-strip-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "media", "outline", "video", "entertainment", "cinema"]
+		},
+		"moon-filled": {
+			"path": "/isometric-icons/isometric-moon-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "astronomy", "filled", "night", "celestial", "space"]
+		},
+		"handshake-outline": {
+			"path": "/isometric-icons/isometric-handshake-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "agreement", "collaboration", "partnership"]
+		},
+		"trophy-filled": {
+			"path": "/isometric-icons/isometric-trophy-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "awards", "filled", "achievement", "sports", "recognition"]
+		},
+		"calendar-checkmark": {
+			"path": "/isometric-icons/isometric-calendar-checkmark.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "date", "check", "schedule", "filled", "event"]
+		},
+		"test-tube-filled": {
+			"path": "/isometric-icons/isometric-test-tube-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "science", "filled", "laboratory", "experiment", "glassware"]
+		},
+		"arrow-left-outline": {
+			"path": "/isometric-icons/isometric-arrow-left-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "interface", "arrow"]
+		},
+		"arrow-return-right": {
+			"path": "/isometric-icons/isometric-arrow-return-right.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "filled", "arrow", "direction", "interface"]
+		},
+		"rocket-launch-filled": {
+			"path": "/isometric-icons/isometric-rocket-launch-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "space", "filled", "launch", "technology", "exploration"]
+		},
+		"gavel-hammer-outline": {
+			"path": "/isometric-icons/isometric-gavel-hammer-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "law", "outline", "justice", "court", "legal"]
+		},
+		"passport-with-globe-outline": {
+			"path": "/isometric-icons/isometric-passport-with-globe-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "travel", "outline", "document", "global", "identity"]
+		},
+		"tooth-outline": {
+			"path": "/isometric-icons/isometric-tooth-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "dentistry", "dental", "iconography"]
+		},
+		"globe-airplane-filled": {
+			"path": "/isometric-icons/isometric-globe-airplane-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "travel", "filled", "navigation", "transportation", "geography"]
+		},
+		"woman-simple-outline": {
+			"path": "/isometric-icons/isometric-woman-simple-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "female", "avatar", "profile"]
+		},
+		"cloud-outline": {
+			"path": "/isometric-icons/isometric-cloud-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "outline", "sky", "nature", "clouds"]
+		},
+		"clipboard-plan-outline": {
+			"path": "/isometric-icons/isometric-clipboard-plan-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "planning", "outline", "document", "strategy", "business"]
+		},
+		"cup-filled": {
+			"path": "/isometric-icons/isometric-cup-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "beverage", "filled", "container", "drinkware", "kitchen"]
+		},
+		"arrow-right-forward-3d": {
+			"path": "/isometric-icons/isometric-arrow-right-forward-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "3d", "direction", "arrow", "interface"]
+		},
+		"printer-with-paper": {
+			"path": "/isometric-icons/isometric-printer-with-paper.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "filled", "printing", "office", "document"]
+		},
+		"person-scarf-outline": {
+			"path": "/isometric-icons/isometric-person-scarf-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "avatar", "fashion"]
+		},
+		"worker-hat-filled": {
+			"path": "/isometric-icons/isometric-worker-hat-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "worker", "occupation", "avatar"]
+		},
+		"coin-euro-3d": {
+			"path": "/isometric-icons/isometric-coin-euro-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "currency", "3d", "euro", "money"]
+		},
+		"glass-drink-filled": {
+			"path": "/isometric-icons/isometric-glass-drink-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "beverage", "filled", "container", "refreshment", "liquid"]
+		},
+		"document-certificate-outline": {
+			"path": "/isometric-icons/isometric-document-certificate-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "outline", "certificate", "document", "legal"]
+		},
+		"cloud-with-rain": {
+			"path": "/isometric-icons/isometric-cloud-with-rain.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "weather", "filled", "nature", "clouds", "precipitation"]
+		},
+		"user-avatar-filled": {
+			"path": "/isometric-icons/isometric-user-avatar-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "profile", "account", "avatar"]
+		},
+		"gift-box-ribbon": {
+			"path": "/isometric-icons/isometric-gift-box-ribbon.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "ecommerce", "filled", "celebration", "present", "gift"]
+		},
+		"arrow-up-right-diagonal": {
+			"path": "/isometric-icons/isometric-arrow-up-right-diagonal.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "movement", "interface"]
+		},
+		"user-business-suit-outline": {
+			"path": "/isometric-icons/isometric-user-business-suit-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "professional", "avatar", "profile"]
+		},
+		"certificate-with-ribbon": {
+			"path": "/isometric-icons/isometric-certificate-with-ribbon.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "education", "filled", "document", "award", "achievement"]
+		},
+		"arrow-left-right-3d": {
+			"path": "/isometric-icons/isometric-arrow-left-right-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "3d", "arrows", "directional", "interface"]
+		},
+		"quantum-globe-outline": {
+			"path": "/isometric-icons/isometric-quantum-globe-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "science", "outline", "technology", "network", "global"]
+		},
+		"money-bills-coins": {
+			"path": "/isometric-icons/isometric-money-bills-coins.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "filled", "currency", "ecommerce", "banking"]
+		},
+		"arrow-left-forward": {
+			"path": "/isometric-icons/isometric-arrow-left-forward.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "movement", "interface"]
+		},
+		"magnifying-glass-outline": {
+			"path": "/isometric-icons/isometric-magnifying-glass-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "search", "interface", "outline", "zoom", "exploration"]
+		},
+		"lock-open-outline": {
+			"path": "/isometric-icons/isometric-lock-open-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "security", "outline", "access", "safety", "authentication"]
+		},
+		"person-glasses-thoughtful": {
+			"path": "/isometric-icons/isometric-person-glasses-thoughtful.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "thoughtful", "avatar"]
+		},
+		"chart-bar-flag-goal": {
+			"path": "/isometric-icons/isometric-chart-bar-flag-goal.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "filled", "analytics", "growth", "performance"]
+		},
+		"briefcase-open-filled": {
+			"path": "/isometric-icons/isometric-briefcase-open-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "business", "filled", "finance", "portfolio", "case"]
+		},
+		"airplane-outline": {
+			"path": "/isometric-icons/isometric-airplane-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "aviation", "travel", "aircraft"]
+		},
+		"arrows-refresh-circular": {
+			"path": "/isometric-icons/isometric-arrows-refresh-circular.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "reload", "update", "navigation"]
+		},
+		"user-female-outline": {
+			"path": "/isometric-icons/isometric-user-female-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "avatar", "female"]
+		},
+		"skyscraper-building-3d": {
+			"path": "/isometric-icons/isometric-skyscraper-building-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "architecture", "3d", "city", "urban", "structure"]
+		},
+		"taxi-sign-filled": {
+			"path": "/isometric-icons/isometric-taxi-sign-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "filled", "vehicle", "taxi", "signage"]
+		},
+		"sign-female-outline": {
+			"path": "/isometric-icons/isometric-sign-female-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "gender", "outline", "female", "symbol", "gender-sign"]
+		},
+		"window-arrow-outlined": {
+			"path": "/isometric-icons/isometric-window-arrow-outlined.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "navigation", "browser", "action"]
+		},
+		"rocket-launch-outline": {
+			"path": "/isometric-icons/isometric-rocket-launch-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "space", "outline", "transportation", "launch", "technology"]
+		},
+		"paperclip-outline": {
+			"path": "/isometric-icons/isometric-paperclip-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "outline", "attachment", "document", "file-management"]
+		},
+		"document-search-outline": {
+			"path": "/isometric-icons/isometric-document-search-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "document", "outline", "search", "file", "magnifying-glass"]
+		},
+		"arrows-up-right": {
+			"path": "/isometric-icons/isometric-arrows-up-right.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "navigation", "outline", "direction", "arrows", "interface"]
+		},
+		"palette-pencil-filled": {
+			"path": "/isometric-icons/isometric-palette-pencil-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "design", "filled", "art", "creative", "tools"]
+		},
+		"phone-call-outline": {
+			"path": "/isometric-icons/isometric-phone-call-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "outline", "mobile", "contact", "telephony"]
+		},
+		"soccer-ball-filled": {
+			"path": "/isometric-icons/isometric-soccer-ball-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "sports", "filled", "football", "game", "recreation"]
+		},
+		"lock-secured-outline": {
+			"path": "/isometric-icons/isometric-lock-secured-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "security", "outline", "protection", "privacy", "access-control"]
+		},
+		"arrow-cursor-filled": {
+			"path": "/isometric-icons/isometric-arrow-cursor-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "interface", "filled", "pointer", "navigation", "mouse-cursor"]
+		},
+		"beach-umbrella-and-lounge-chair": {
+			"path": "/isometric-icons/isometric-beach-umbrella-and-lounge-chair.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "outdoor", "vacation", "beach", "relaxation", "icon-set"]
+		},
+		"user-exchange-filled": {
+			"path": "/isometric-icons/isometric-user-exchange-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "communication", "filled", "user-interface", "social", "interaction"]
+		},
+		"printer-outline": {
+			"path": "/isometric-icons/isometric-printer-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "hardware", "outline", "printing", "office", "device"]
+		},
+		"theater-masks": {
+			"path": "/isometric-icons/isometric-theater-masks.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "entertainment", "symbol", "drama", "theater", "performance"]
+		},
+		"thumbs-up-filled": {
+			"path": "/isometric-icons/isometric-thumbs-up-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "gesture", "filled", "approval", "feedback", "social"]
+		},
+		"wallet-with-cards": {
+			"path": "/isometric-icons/isometric-wallet-with-cards.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "finance", "filled", "wallet", "payment", "banking"]
+		},
+		"bar-chart-3d": {
+			"path": "/isometric-icons/isometric-bar-chart-3d.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "data-visualization", "3d", "analytics", "business", "statistics"]
+		},
+		"eyeball-outline": {
+			"path": "/isometric-icons/isometric-eyeball-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "healthcare", "outline", "vision", "eye", "medical"]
+		},
+		"sailboat-outline": {
+			"path": "/isometric-icons/isometric-sailboat-outline.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "transportation", "outline", "nautical", "recreation", "marine"]
+		},
+		"user-business-suit": {
+			"path": "/isometric-icons/isometric-user-business-suit.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "filled", "profile", "business", "avatar"]
+		},
+		"business-person-suit": {
+			"path": "/isometric-icons/isometric-business-person-suit.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "user-interface", "outline", "profile", "business", "avatar"]
+		},
+		"shield-star-filled": {
+			"path": "/isometric-icons/isometric-shield-star-filled.svg",
+			"width": 24,
+			"height": 24,
+			"tags": ["isometric", "3d", "security", "filled", "protection", "badge", "star-symbol"]
+		}
+	}
+}

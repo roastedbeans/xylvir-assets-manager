@@ -1,0 +1,1954 @@
+{
+	"icons": {
+		"cloud-native-cloud-magenta-front": {
+			"path": "/cloud-native-icons/cloud-native-cloud-magenta-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["filled", "software", "technology", "data-storage", "cloud-computing"]
+		},
+		"cloud-native-pod-banana": {
+			"path": "/cloud-native-icons/cloud-native-pod-banana.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["filled", "banana", "software", "container", "cloud-computing"]
+		},
+		"cloud-native-conveyor-long-down-left": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-long-down-left.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud", "outline", "software", "data-transfer", "infrastructure"]
+		},
+		"cloud-native-cloud-black-side": {
+			"path": "/cloud-native-icons/cloud-native-cloud-black-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["filled", "software", "technology", "data-storage", "cloud-computing"]
+		},
+		"cloud-native-nats-streaming": {
+			"path": "/cloud-native-icons/cloud-native-nats-streaming.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["data", "cloud", "filled", "software", "streaming"]
+		},
+		"cloud-native-code-tone-black": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-black.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["filled", "software", "programming", "development", "cloud-computing"]
+		},
+		"cloud-native-container-blue-gray-light": {
+			"path": "/cloud-native-icons/cloud-native-container-blue-gray-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["cloud", "filled", "software", "container", "technology"]
+		},
+		"cloud-native-storage-extender": {
+			"path": "/cloud-native-icons/cloud-native-storage-extender.svg",
+			"width": 49,
+			"height": 41,
+			"tags": ["cloud", "filled", "storage", "software", "extension"]
+		},
+		"cloud-native-gcp-front": {
+			"path": "/cloud-native-icons/cloud-native-gcp-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["gcp", "filled", "software", "technology", "cloud-computing"]
+		},
+		"cloud-native-code-tone-raspberry": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-raspberry.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["cloud", "filled", "software", "development", "programming"]
+		},
+		"cloud-native-pod-emerald": {
+			"path": "/cloud-native-icons/cloud-native-pod-emerald.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["filled", "container", "kubernetes", "technology", "cloud-computing"]
+		},
+		"cloud-native-container-amber-light": {
+			"path": "/cloud-native-icons/cloud-native-container-amber-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["cloud", "filled", "software", "container", "technology"]
+		},
+		"cloud-native-pod-lagoon": {
+			"path": "/cloud-native-icons/cloud-native-pod-lagoon.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["filled", "container", "kubernetes", "technology", "cloud-computing"]
+		},
+		"cloud-native-software-package-tone-poussin": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-poussin.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud", "filled", "package", "software", "technology"]
+		},
+		"cloud-native-software-package-pink-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-pink-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud", "filled", "package", "software", "technology"]
+		},
+		"cloud-native-vol-mount-side": {
+			"path": "/cloud-native-icons/cloud-native-vol-mount-side.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["mount", "outline", "storage", "cloud-computing", "data-management"]
+		},
+		"cloud-native-container-black": {
+			"path": "/cloud-native-icons/cloud-native-container-black.svg",
+			"width": 57,
+			"height": 53,
+			"tags": ["cloud", "filled", "devops", "software", "container"]
+		},
+		"cloud-native-cloud-yellow-front": {
+			"path": "/cloud-native-icons/cloud-native-cloud-yellow-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["filled", "software", "technology", "data-storage", "cloud-computing"]
+		},
+		"cloud-native-software-package-lime-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-lime-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud", "filled", "package", "software", "technology"]
+		},
+		"cloud-native-cronjob": {
+			"path": "/cloud-native-icons/cloud-native-cronjob.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["outline", "software", "automation", "scheduling", "cloud-computing"]
+		},
+		"cloud-native-openfaas": {
+			"path": "/cloud-native-icons/cloud-native-openfaas.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["filled", "software", "platform", "serverless", "cloud-computing"]
+		},
+		"cloud-native-container-tone-petrol": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-petrol.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["filled", "software", "container", "technology", "cloud-native"]
+		},
+		"cloud-native-conveyor-short-up-left": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-short-up-left.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["outline", "software", "data-movement", "infrastructure", "cloud-computing"]
+		},
+		"cloud-native-software-package-tone-carrot": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-carrot.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["filled", "package", "software", "technology", "cloud-computing"]
+		},
+		"cloud-native-container-resources": {
+			"path": "/cloud-native-icons/cloud-native-container-resources.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "resources"]
+		},
+		"cloud-native-code-tone-sapphire": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-sapphire.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-software-package-tone-raspberry": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-raspberry.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-computing", "package", "technology"]
+		},
+		"cloud-native-orange-side": {
+			"path": "/cloud-native-icons/cloud-native-orange-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "technology", "software", "orange"]
+		},
+		"cloud-native-outscale-side": {
+			"path": "/cloud-native-icons/cloud-native-outscale-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "technology", "infrastructure", "network"]
+		},
+		"cloud-native-code-tone-grape": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-grape.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud-computing", "development", "technology"]
+		},
+		"cloud-native-software-package-tone-emeraude": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-emeraude.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-gray-light": {
+			"path": "/cloud-native-icons/cloud-native-container-gray-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-scaleway-front": {
+			"path": "/cloud-native-icons/cloud-native-scaleway-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "scaleway", "technology", "infrastructure"]
+		},
+		"cloud-native-single-process": {
+			"path": "/cloud-native-icons/cloud-native-single-process.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "process", "native"]
+		},
+		"cloud-native-container-tone-white": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-white.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-configuration-tone-azure": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-azure.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["cloud", "configuration", "software", "filled", "azure"]
+		},
+		"cloud-native-object-storage": {
+			"path": "/cloud-native-icons/cloud-native-object-storage.svg",
+			"width": 48,
+			"height": 61,
+			"tags": ["software", "filled", "cloud", "data-storage", "technology"]
+		},
+		"cloud-native-software-package-tone-azure": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-azure.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "filled", "package", "technology"]
+		},
+		"cloud-native-kubernetes-front": {
+			"path": "/cloud-native-icons/cloud-native-kubernetes-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "filled", "container", "orchestration", "cloud"]
+		},
+		"cloud-native-software-package-gray-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-gray-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-scaleway-side": {
+			"path": "/cloud-native-icons/cloud-native-scaleway-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "scaleway", "technology", "software"]
+		},
+		"cloud-native-scheduler-angled": {
+			"path": "/cloud-native-icons/cloud-native-scheduler-angled.svg",
+			"width": 45,
+			"height": 41,
+			"tags": ["software", "outline", "cloud-computing", "scheduler", "management"]
+		},
+		"cloud-native-saltstack": {
+			"path": "/cloud-native-icons/cloud-native-saltstack.svg",
+			"width": 61,
+			"height": 67,
+			"tags": ["software", "filled", "cloud", "devops", "infrastructure"]
+		},
+		"cloud-native-container-tone-carrot": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-carrot.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-native", "container", "devops"]
+		},
+		"cloud-native-software-package-tone-petrol": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-petrol.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "data"]
+		},
+		"cloud-native-master": {
+			"path": "/cloud-native-icons/cloud-native-master.svg",
+			"width": 49,
+			"height": 41,
+			"tags": ["software", "outline", "cloud", "native", "technology"]
+		},
+		"cloud-native-server-rack-hdd": {
+			"path": "/cloud-native-icons/cloud-native-server-rack-hdd.svg",
+			"width": 49,
+			"height": 114,
+			"tags": ["hardware", "filled", "server", "data-storage", "cloud-computing"]
+		},
+		"cloud-native-load-balancer": {
+			"path": "/cloud-native-icons/cloud-native-load-balancer.svg",
+			"width": 32,
+			"height": 31,
+			"tags": ["software", "networking", "infrastructure", "filled", "cloud-computing"]
+		},
+		"cloud-native-container-orange-light": {
+			"path": "/cloud-native-icons/cloud-native-container-orange-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "container", "cloud-native", "orange"]
+		},
+		"cloud-native-storage-server-hdd": {
+			"path": "/cloud-native-icons/cloud-native-storage-server-hdd.svg",
+			"width": 49,
+			"height": 41,
+			"tags": ["hardware", "filled", "storage", "server", "cloud"]
+		},
+		"cloud-native-apiserver": {
+			"path": "/cloud-native-icons/cloud-native-apiserver.svg",
+			"width": 34,
+			"height": 37,
+			"tags": ["software", "outline", "api", "cloud-computing", "server"]
+		},
+		"cloud-native-notary": {
+			"path": "/cloud-native-icons/cloud-native-notary.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "security", "digital-signature"]
+		},
+		"cloud-native-container-light-blue-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-light-blue-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-container-pink-light": {
+			"path": "/cloud-native-icons/cloud-native-container-pink-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-container-teal-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-teal-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-software-package-black": {
+			"path": "/cloud-native-icons/cloud-native-software-package-black.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-mixed-repository": {
+			"path": "/cloud-native-icons/cloud-native-mixed-repository.svg",
+			"width": 160,
+			"height": 162,
+			"tags": ["cloud-computing", "filled", "repository", "software", "devops"]
+		},
+		"cloud-native-software-package-purple-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-purple-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-deep-orange-light": {
+			"path": "/cloud-native-icons/cloud-native-container-deep-orange-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-software-package-deep-orange-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-deep-orange-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "filled", "package", "technology"]
+		},
+		"cloud-native-software-package-amber-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-amber-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "filled", "technology", "package"]
+		},
+		"cloud-native-helm": {
+			"path": "/cloud-native-icons/cloud-native-helm.svg",
+			"width": 61,
+			"height": 67,
+			"tags": ["software", "filled", "cloud", "kubernetes", "containerization"]
+		},
+		"cloud-native-sniffer-dog-rear-front": {
+			"path": "/cloud-native-icons/cloud-native-sniffer-dog-rear-front.svg",
+			"width": 44,
+			"height": 59,
+			"tags": ["interface", "outline", "dog", "cloud-native", "sniffer"]
+		},
+		"cloud-native-intelligence": {
+			"path": "/cloud-native-icons/cloud-native-intelligence.svg",
+			"width": 45,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "data", "technology"]
+		},
+		"cloud-native-pod-metadata2": {
+			"path": "/cloud-native-icons/cloud-native-pod-metadata2.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["cloud-computing", "metadata", "outline", "software", "containerization"]
+		},
+		"cloud-native-container-monitoring": {
+			"path": "/cloud-native-icons/cloud-native-container-monitoring.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "monitoring", "container"]
+		},
+		"cloud-native-container-indigo-light": {
+			"path": "/cloud-native-icons/cloud-native-container-indigo-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "outline", "cloud", "container", "technology"]
+		},
+		"cloud-native-software-package-gray-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-gray-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-oracle-side": {
+			"path": "/cloud-native-icons/cloud-native-oracle-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "outline", "cloud", "oracle", "technology"]
+		},
+		"cloud-native-kubernetes-side": {
+			"path": "/cloud-native-icons/cloud-native-kubernetes-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "outline", "container-orchestration", "kubernetes", "cloud-native"]
+		},
+		"cloud-native-container-tone-azure": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-azure.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "azure"]
+		},
+		"cloud-native-pod-green": {
+			"path": "/cloud-native-icons/cloud-native-pod-green.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-software-package-yellow-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-yellow-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-conveyor-long-up-left": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-long-up-left.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "outline", "infrastructure", "data-movement", "software"]
+		},
+		"cloud-native-software-package-tone-white": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-white.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "package"]
+		},
+		"cloud-native-configuration-tone-white": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-white.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "settings", "configuration"]
+		},
+		"cloud-native-software-package-light-green-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-light-green-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-computing", "package", "technology"]
+		},
+		"cloud-native-container-tone-raspberry": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-raspberry.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-native", "container", "technology"]
+		},
+		"cloud-native-configuration-tone-lagoon": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-lagoon.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "configuration", "devops"]
+		},
+		"cloud-native-cloud-controller-manager": {
+			"path": "/cloud-native-icons/cloud-native-cloud-controller-manager.svg",
+			"width": 34,
+			"height": 37,
+			"tags": ["software", "outline", "cloud", "management", "controller"]
+		},
+		"cloud-native-container-blue-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-blue-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-internet-shadowed": {
+			"path": "/cloud-native-icons/cloud-native-internet-shadowed.svg",
+			"width": 41,
+			"height": 48,
+			"tags": ["software", "outline", "cloud-computing", "internet", "technology"]
+		},
+		"cloud-native-pod-grappe": {
+			"path": "/cloud-native-icons/cloud-native-pod-grappe.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-configuration-tone-green": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-green.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "settings", "configuration"]
+		},
+		"cloud-native-software-package-tone-green": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-green.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-daemonset": {
+			"path": "/cloud-native-icons/cloud-native-daemonset.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "outline", "cloud", "container", "orchestration"]
+		},
+		"cloud-native-cloud-white-front": {
+			"path": "/cloud-native-icons/cloud-native-cloud-white-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "technology", "data-storage", "software"]
+		},
+		"cloud-native-pod-white": {
+			"path": "/cloud-native-icons/cloud-native-pod-white.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-code-tone-metal": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-metal.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud-computing", "development", "programming"]
+		},
+		"cloud-native-pod-orange": {
+			"path": "/cloud-native-icons/cloud-native-pod-orange.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "cloud-computing", "devops"]
+		},
+		"cloud-native-container-tone-metal-open-insert": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-metal-open-insert.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-native", "container", "insert"]
+		},
+		"cloud-native-software-package-yellow-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-yellow-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "package"]
+		},
+		"cloud-native-configuration-tone-banana": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-banana.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "configuration", "banana"]
+		},
+		"cloud-native-container-green-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-green-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-configuration-tone-poussin": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-poussin.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "settings", "configuration"]
+		},
+		"cloud-native-outscale-front": {
+			"path": "/cloud-native-icons/cloud-native-outscale-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "filled", "cloud", "infrastructure", "technology"]
+		},
+		"cloud-native-etcd": {
+			"path": "/cloud-native-icons/cloud-native-etcd.svg",
+			"width": 49,
+			"height": 41,
+			"tags": ["software", "filled", "database", "cloud", "storage"]
+		},
+		"cloud-native-container-red-light": {
+			"path": "/cloud-native-icons/cloud-native-container-red-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-dns": {
+			"path": "/cloud-native-icons/cloud-native-dns.svg",
+			"width": 31,
+			"height": 35,
+			"tags": ["networking", "filled", "cloud", "infrastructure", "domain"]
+		},
+		"cloud-native-index": {
+			"path": "/cloud-native-icons/cloud-native-index.svg",
+			"width": 45,
+			"height": 59,
+			"tags": ["software", "outline", "cloud-computing", "data", "indexing"]
+		},
+		"cloud-native-pod-raspberry": {
+			"path": "/cloud-native-icons/cloud-native-pod-raspberry.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "cloud-computing", "container", "kubernetes"]
+		},
+		"cloud-native-container-logging": {
+			"path": "/cloud-native-icons/cloud-native-container-logging.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "monitoring"]
+		},
+		"cloud-native-software-package-tone-sapphire": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-sapphire.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-code-tone-emeraude": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-emeraude.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-docker": {
+			"path": "/cloud-native-icons/cloud-native-docker.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "container", "devops", "cloud-computing"]
+		},
+		"cloud-native-prometheus": {
+			"path": "/cloud-native-icons/cloud-native-prometheus.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "monitoring", "data-visualization", "cloud-native"]
+		},
+		"cloud-native-deployment-pipeline": {
+			"path": "/cloud-native-icons/cloud-native-deployment-pipeline.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "engineering", "filled", "infrastructure", "devops"]
+		},
+		"cloud-native-server": {
+			"path": "/cloud-native-icons/cloud-native-server.svg",
+			"width": 49,
+			"height": 41,
+			"tags": ["software", "filled", "cloud", "server", "technology"]
+		},
+		"cloud-native-container-magenta": {
+			"path": "/cloud-native-icons/cloud-native-container-magenta.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "container", "cloud-native", "technology"]
+		},
+		"cloud-native-pod-sidecar-1-side": {
+			"path": "/cloud-native-icons/cloud-native-pod-sidecar-1-side.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "software", "container", "outline", "architecture"]
+		},
+		"cloud-native-container-tone-metal-open": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-metal-open.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "container", "cloud-native", "open"]
+		},
+		"cloud-native-open-telekom-cloud-front": {
+			"path": "/cloud-native-icons/cloud-native-open-telekom-cloud-front.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "filled", "software", "network", "infrastructure"]
+		},
+		"cloud-native-software-package-tone-metal-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-metal-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-tone-gray": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-gray.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "gray"]
+		},
+		"cloud-native-cloud-magenta-side": {
+			"path": "/cloud-native-icons/cloud-native-cloud-magenta-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "technology", "data-storage", "software"]
+		},
+		"cloud-native-pod-sidecar-1": {
+			"path": "/cloud-native-icons/cloud-native-pod-sidecar-1.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-cloud-black-front": {
+			"path": "/cloud-native-icons/cloud-native-cloud-black-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "technology", "data-storage", "infrastructure"]
+		},
+		"cloud-native-container-cyan-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-cyan-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-server-single-partition": {
+			"path": "/cloud-native-icons/cloud-native-server-single-partition.svg",
+			"width": 49,
+			"height": 44,
+			"tags": ["software", "outline", "cloud-computing", "server", "data-storage"]
+		},
+		"cloud-native-conveyor-long-down-right": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-long-down-right.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "outline", "data-transfer", "infrastructure", "software"]
+		},
+		"cloud-native-cronjob-gray": {
+			"path": "/cloud-native-icons/cloud-native-cronjob-gray.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "outline", "automation", "scheduling", "cloud-computing"]
+		},
+		"cloud-native-deployment-gray": {
+			"path": "/cloud-native-icons/cloud-native-deployment-gray.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "filled", "cloud", "deployment", "technology"]
+		},
+		"cloud-native-alertmanager": {
+			"path": "/cloud-native-icons/cloud-native-alertmanager.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "outline", "monitoring", "alerts", "cloud-native"]
+		},
+		"cloud-native-code": {
+			"path": "/cloud-native-icons/cloud-native-code.svg",
+			"width": 45,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-conveyor-short-down-right": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-short-down-right.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "outline", "data-transfer", "software", "infrastructure"]
+		},
+		"cloud-native-container-tone-green": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-green.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-pod-azure": {
+			"path": "/cloud-native-icons/cloud-native-pod-azure.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["cloud-computing", "filled", "container", "azure", "devops"]
+		},
+		"cloud-native-kube-proxy-angled": {
+			"path": "/cloud-native-icons/cloud-native-kube-proxy-angled.svg",
+			"width": 45,
+			"height": 41,
+			"tags": ["software", "outline", "kubernetes", "cloud-computing", "networking"]
+		},
+		"cloud-native-container-light-green-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-light-green-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-software-package-pink-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-pink-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-daemonset-gray": {
+			"path": "/cloud-native-icons/cloud-native-daemonset-gray.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "filled", "cloud-computing", "kubernetes", "container-management"]
+		},
+		"cloud-native-hetzner-front": {
+			"path": "/cloud-native-icons/cloud-native-hetzner-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "infrastructure", "software", "hosting"]
+		},
+		"cloud-native-software-package-green-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-green-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "package"]
+		},
+		"cloud-native-code-tone-banana": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-banana.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud-computing", "development", "banana"]
+		},
+		"cloud-native-container-yellow-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-yellow-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "container", "cloud", "devops"]
+		},
+		"cloud-native-pod-sidecar-2": {
+			"path": "/cloud-native-icons/cloud-native-pod-sidecar-2.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "container", "kubernetes", "architecture"]
+		},
+		"cloud-native-container-registry": {
+			"path": "/cloud-native-icons/cloud-native-container-registry.svg",
+			"width": 160,
+			"height": 163,
+			"tags": ["software", "filled", "cloud", "container", "registry"]
+		},
+		"cloud-native-kubeless": {
+			"path": "/cloud-native-icons/cloud-native-kubeless.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "kubernetes", "serverless"]
+		},
+		"cloud-native-alpine": {
+			"path": "/cloud-native-icons/cloud-native-alpine.svg",
+			"width": 91,
+			"height": 55,
+			"tags": ["software", "filled", "cloud", "technology", "devops"]
+		},
+		"cloud-native-pod-gray": {
+			"path": "/cloud-native-icons/cloud-native-pod-gray.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-ovh-front": {
+			"path": "/cloud-native-icons/cloud-native-ovh-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "technology", "service", "infrastructure"]
+		},
+		"cloud-native-internet": {
+			"path": "/cloud-native-icons/cloud-native-internet.svg",
+			"width": 41,
+			"height": 41,
+			"tags": ["technology", "filled", "cloud", "network", "internet"]
+		},
+		"cloud-native-cloud-cyan-side": {
+			"path": "/cloud-native-icons/cloud-native-cloud-cyan-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "technology", "data-storage", "software"]
+		},
+		"cloud-native-code-tone-lagoon": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-lagoon.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud-computing", "development", "programming"]
+		},
+		"cloud-native-micro-virtual-machine": {
+			"path": "/cloud-native-icons/cloud-native-micro-virtual-machine.svg",
+			"width": 49,
+			"height": 70,
+			"tags": ["software", "cloud-computing", "virtualization", "technology", "filled"]
+		},
+		"cloud-native-container-tone-magenta": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-magenta.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-pod-sidecar-3": {
+			"path": "/cloud-native-icons/cloud-native-pod-sidecar-3.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "container", "cloud-native", "microservices"]
+		},
+		"cloud-native-code-tone-poussin": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-poussin.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud-computing", "development", "programming"]
+		},
+		"cloud-native-container-green-light": {
+			"path": "/cloud-native-icons/cloud-native-container-green-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "container", "cloud-native", "technology"]
+		},
+		"cloud-native-digitalocean-side": {
+			"path": "/cloud-native-icons/cloud-native-digitalocean-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "platform", "service", "technology"]
+		},
+		"cloud-native-solr": {
+			"path": "/cloud-native-icons/cloud-native-solr.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "outline", "database", "search", "cloud-computing"]
+		},
+		"cloud-native-pod-metal": {
+			"path": "/cloud-native-icons/cloud-native-pod-metal.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "cloud", "kubernetes"]
+		},
+		"cloud-native-software-package-orange-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-orange-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-hetzner-side": {
+			"path": "/cloud-native-icons/cloud-native-hetzner-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "infrastructure", "service-provider", "technology"]
+		},
+		"cloud-native-cloud-white-side": {
+			"path": "/cloud-native-icons/cloud-native-cloud-white-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "technology", "data-storage", "infrastructure"]
+		},
+		"cloud-native-container-metadata": {
+			"path": "/cloud-native-icons/cloud-native-container-metadata.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "metadata"]
+		},
+		"cloud-native-container-cyan-light": {
+			"path": "/cloud-native-icons/cloud-native-container-cyan-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-container-tone-grape": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-grape.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-native", "container", "grape"]
+		},
+		"cloud-native-ovh-side": {
+			"path": "/cloud-native-icons/cloud-native-ovh-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "technology", "infrastructure", "service-provider"]
+		},
+		"cloud-native-azure-front": {
+			"path": "/cloud-native-icons/cloud-native-azure-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "azure", "infrastructure", "technology"]
+		},
+		"cloud-native-docker-registry": {
+			"path": "/cloud-native-icons/cloud-native-docker-registry.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "container", "cloud", "devops"]
+		},
+		"cloud-native-software-package-orange-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-orange-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-deep-purple-light": {
+			"path": "/cloud-native-icons/cloud-native-container-deep-purple-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-code-tone-white": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-white.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-virtual-machine": {
+			"path": "/cloud-native-icons/cloud-native-virtual-machine.svg",
+			"width": 49,
+			"height": 70,
+			"tags": ["software", "outline", "cloud-computing", "virtualization", "technology"]
+		},
+		"cloud-native-software-package-brown-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-brown-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-software-package-deep-purple-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-deep-purple-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-software-package-brown-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-brown-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-alibaba-side": {
+			"path": "/cloud-native-icons/cloud-native-alibaba-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "alibaba", "technology", "software"]
+		},
+		"cloud-native-kubelet-angled": {
+			"path": "/cloud-native-icons/cloud-native-kubelet-angled.svg",
+			"width": 45,
+			"height": 41,
+			"tags": ["software", "outline", "kubernetes", "cloud-native", "container"]
+		},
+		"cloud-native-job-gray": {
+			"path": "/cloud-native-icons/cloud-native-job-gray.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "filled", "cloud-computing", "job", "development"]
+		},
+		"cloud-native-container-lime-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-lime-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-ingress": {
+			"path": "/cloud-native-icons/cloud-native-ingress.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "cloud", "networking", "infrastructure"]
+		},
+		"cloud-native-clair": {
+			"path": "/cloud-native-icons/cloud-native-clair.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "native", "devops"]
+		},
+		"cloud-native-container-deep-orange-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-deep-orange-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-container-white": {
+			"path": "/cloud-native-icons/cloud-native-container-white.svg",
+			"width": 57,
+			"height": 53,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-pod-yellow": {
+			"path": "/cloud-native-icons/cloud-native-pod-yellow.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-software-package-tone-metal-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-metal-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "data"]
+		},
+		"cloud-native-terraform": {
+			"path": "/cloud-native-icons/cloud-native-terraform.svg",
+			"width": 61,
+			"height": 67,
+			"tags": ["software", "filled", "cloud", "devops", "infrastructure-as-code"]
+		},
+		"cloud-native-software-package-tone-banana": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-banana.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "banana"]
+		},
+		"cloud-native-chartmuseum": {
+			"path": "/cloud-native-icons/cloud-native-chartmuseum.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "data", "repository"]
+		},
+		"cloud-native-container-yellow-light": {
+			"path": "/cloud-native-icons/cloud-native-container-yellow-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-deployment": {
+			"path": "/cloud-native-icons/cloud-native-deployment.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "outline", "cloud", "deployment", "architecture"]
+		},
+		"cloud-native-container-blue-light": {
+			"path": "/cloud-native-icons/cloud-native-container-blue-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud-computing", "container", "technology"]
+		},
+		"cloud-native-orange-front": {
+			"path": "/cloud-native-icons/cloud-native-orange-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "filled", "cloud", "technology", "infrastructure"]
+		},
+		"cloud-native-ksonnet": {
+			"path": "/cloud-native-icons/cloud-native-ksonnet.svg",
+			"width": 61,
+			"height": 67,
+			"tags": ["software", "filled", "cloud", "configuration", "devops"]
+		},
+		"cloud-native-centos": {
+			"path": "/cloud-native-icons/cloud-native-centos.svg",
+			"width": 91,
+			"height": 55,
+			"tags": ["software", "filled", "cloud", "linux", "operating-system"]
+		},
+		"cloud-native-configuration-tone-magenta": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-magenta.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud-computing", "configuration", "technology"]
+		},
+		"cloud-native-minio": {
+			"path": "/cloud-native-icons/cloud-native-minio.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "cloud-storage", "data-management", "object-storage"]
+		},
+		"cloud-native-software-package-indigo-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-indigo-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-blue-gray-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-blue-gray-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-vol-mount-front": {
+			"path": "/cloud-native-icons/cloud-native-vol-mount-front.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "cloud-storage", "volume-mount", "data-management"]
+		},
+		"cloud-native-software-package-light-blue-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-light-blue-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "technology", "filled", "package"]
+		},
+		"cloud-native-container-purple-light": {
+			"path": "/cloud-native-icons/cloud-native-container-purple-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud-computing", "container", "technology"]
+		},
+		"cloud-native-configuration-tone-emeraude": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-emeraude.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "configuration", "settings"]
+		},
+		"cloud-native-container-amber-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-amber-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-software-package-tone-lagoon": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-lagoon.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "filled", "package", "technology"]
+		},
+		"cloud-native-cloud-controller-manager-angled": {
+			"path": "/cloud-native-icons/cloud-native-cloud-controller-manager-angled.svg",
+			"width": 45,
+			"height": 41,
+			"tags": ["software", "outline", "cloud", "management", "controller"]
+		},
+		"cloud-native-pod-open": {
+			"path": "/cloud-native-icons/cloud-native-pod-open.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "outline", "container", "kubernetes", "devops"]
+		},
+		"cloud-native-container-tone-black": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-black.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-computing", "container", "devops"]
+		},
+		"cloud-native-sniffer-dog-rear-side": {
+			"path": "/cloud-native-icons/cloud-native-sniffer-dog-rear-side.svg",
+			"width": 44,
+			"height": 59,
+			"tags": ["animal", "outline", "dog", "cloud-native", "sniffer"]
+		},
+		"cloud-native-sniffer-dog-front": {
+			"path": "/cloud-native-icons/cloud-native-sniffer-dog-front.svg",
+			"width": 40,
+			"height": 54,
+			"tags": ["software", "filled", "dog", "cloud-native", "monitoring"]
+		},
+		"cloud-native-namespace-gray": {
+			"path": "/cloud-native-icons/cloud-native-namespace-gray.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["cloud-computing", "filled", "namespace", "software", "infrastructure"]
+		},
+		"cloud-native-svc": {
+			"path": "/cloud-native-icons/cloud-native-svc.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "cloud", "service", "technology"]
+		},
+		"cloud-native-container-tone-poussin": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-poussin.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-configuration-tone-grape": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-grape.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "configuration", "grape"]
+		},
+		"cloud-native-runc": {
+			"path": "/cloud-native-icons/cloud-native-runc.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "container", "virtualization", "cloud"]
+		},
+		"cloud-native-software-package-cyan-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-cyan-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-software-package-tone-grape": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-grape.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-native", "package", "technology"]
+		},
+		"cloud-native-conveyor-gate-exit": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-gate-exit.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "cloud-computing", "exit", "infrastructure"]
+		},
+		"cloud-native-open-telekom-cloud-side": {
+			"path": "/cloud-native-icons/cloud-native-open-telekom-cloud-side.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "outline", "telecommunications", "infrastructure", "network"]
+		},
+		"cloud-native-code-tone-magenta": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-magenta.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-container-brown-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-brown-dark.svg",
+			"width": 57,
+			"height": 53,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-server-partitionned": {
+			"path": "/cloud-native-icons/cloud-native-server-partitionned.svg",
+			"width": 49,
+			"height": 44,
+			"tags": ["software", "filled", "cloud-computing", "server", "data-storage"]
+		},
+		"cloud-native-software-package-deep-orange-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-deep-orange-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-code-tone-azure": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-azure.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "azure"]
+		},
+		"cloud-native-container-tone-lagoon": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-lagoon.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-code-repository": {
+			"path": "/cloud-native-icons/cloud-native-code-repository.svg",
+			"width": 160,
+			"height": 170,
+			"tags": ["software", "filled", "repository", "cloud", "development"]
+		},
+		"cloud-native-controller-manager": {
+			"path": "/cloud-native-icons/cloud-native-controller-manager.svg",
+			"width": 34,
+			"height": 37,
+			"tags": ["software", "filled", "cloud", "management", "controller"]
+		},
+		"cloud-native-software-package-teal-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-teal-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-pod-sapphire": {
+			"path": "/cloud-native-icons/cloud-native-pod-sapphire.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "cloud-computing", "container", "kubernetes"]
+		},
+		"cloud-native-container-tone-banana": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-banana.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "banana"]
+		},
+		"cloud-native-job": {
+			"path": "/cloud-native-icons/cloud-native-job.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "filled", "cloud-computing", "job", "technology"]
+		},
+		"cloud-native-server-slim": {
+			"path": "/cloud-native-icons/cloud-native-server-slim.svg",
+			"width": 49,
+			"height": 36,
+			"tags": ["software", "outline", "cloud-computing", "server", "technology"]
+		},
+		"cloud-native-spinnaker": {
+			"path": "/cloud-native-icons/cloud-native-spinnaker.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "devops", "cloud-computing", "deployment"]
+		},
+		"cloud-native-container-light-blue-light": {
+			"path": "/cloud-native-icons/cloud-native-container-light-blue-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-software-package-blue-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-blue-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "filled", "package", "technology"]
+		},
+		"cloud-native-ibm-front": {
+			"path": "/cloud-native-icons/cloud-native-ibm-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "filled", "cloud", "technology", "ibm"]
+		},
+		"cloud-native-software-package-white": {
+			"path": "/cloud-native-icons/cloud-native-software-package-white.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "filled", "package", "technology"]
+		},
+		"cloud-native-container-brown-light": {
+			"path": "/cloud-native-icons/cloud-native-container-brown-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-pod-metadata": {
+			"path": "/cloud-native-icons/cloud-native-pod-metadata.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "outline", "cloud-computing", "container", "metadata"]
+		},
+		"cloud-native-libreoffice": {
+			"path": "/cloud-native-icons/cloud-native-libreoffice.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "office", "document", "productivity"]
+		},
+		"cloud-native-alibaba-front": {
+			"path": "/cloud-native-icons/cloud-native-alibaba-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "filled", "cloud-computing", "technology", "platform"]
+		},
+		"cloud-native-container-tone-sapphire": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-sapphire.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-nats": {
+			"path": "/cloud-native-icons/cloud-native-nats.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "messaging", "data-transport"]
+		},
+		"cloud-native-pod-petrol": {
+			"path": "/cloud-native-icons/cloud-native-pod-petrol.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["cloud-computing", "filled", "container", "devops", "technology"]
+		},
+		"cloud-native-pytorch": {
+			"path": "/cloud-native-icons/cloud-native-pytorch.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "machine-learning", "data-science", "framework"]
+		},
+		"cloud-native-software-package-amber-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-amber-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-gray-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-gray-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-secret": {
+			"path": "/cloud-native-icons/cloud-native-secret.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "data-security", "configuration"]
+		},
+		"cloud-native-apiserver-angled": {
+			"path": "/cloud-native-icons/cloud-native-apiserver-angled.svg",
+			"width": 45,
+			"height": 41,
+			"tags": ["software", "outline", "cloud", "server", "api"]
+		},
+		"cloud-native-configuration-tone-black": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-black.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "settings", "configuration"]
+		},
+		"cloud-native-software-package-green-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-green-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-software-package-tone-black": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-black.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-orange-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-orange-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-conveyor-long-up-right": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-long-up-right.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "infrastructure", "arrow", "filled"]
+		},
+		"cloud-native-pv": {
+			"path": "/cloud-native-icons/cloud-native-pv.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "filled", "storage", "virtualization", "kubernetes"]
+		},
+		"cloud-native-statefulset-gray": {
+			"path": "/cloud-native-icons/cloud-native-statefulset-gray.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "outline", "cloud", "kubernetes", "deployment"]
+		},
+		"cloud-native-software-package-light-blue-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-light-blue-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-oracle-front": {
+			"path": "/cloud-native-icons/cloud-native-oracle-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "filled", "cloud", "database", "technology"]
+		},
+		"cloud-native-conveyor-short-up-right": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-short-up-right.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "outline", "infrastructure", "data-transfer", "arrow"]
+		},
+		"cloud-native-software-package-blue-gray-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-blue-gray-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-lime-light": {
+			"path": "/cloud-native-icons/cloud-native-container-lime-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-conveyor-gate-enter": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-gate-enter.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "cloud", "infrastructure", "data"]
+		},
+		"cloud-native-ibm-side": {
+			"path": "/cloud-native-icons/cloud-native-ibm-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "outline", "cloud", "ibm", "technology"]
+		},
+		"cloud-native-container-purple-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-purple-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-kube-proxy": {
+			"path": "/cloud-native-icons/cloud-native-kube-proxy.svg",
+			"width": 34,
+			"height": 37,
+			"tags": ["software", "outline", "kubernetes", "cloud-native", "proxy"]
+		},
+		"cloud-native-pod-black": {
+			"path": "/cloud-native-icons/cloud-native-pod-black.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["software", "filled", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-software-package-red-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-red-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-code-tone-petrol": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-petrol.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-drone": {
+			"path": "/cloud-native-icons/cloud-native-drone.svg",
+			"width": 123,
+			"height": 85,
+			"tags": ["technology", "filled", "aerospace", "software", "cloud-computing"]
+		},
+		"cloud-native-controller-manager-angled": {
+			"path": "/cloud-native-icons/cloud-native-controller-manager-angled.svg",
+			"width": 45,
+			"height": 41,
+			"tags": ["software", "outline", "cloud-computing", "management", "controller"]
+		},
+		"cloud-native-configuration-tone-carrot": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-carrot.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["cloud-computing", "configuration", "filled", "software", "devops"]
+		},
+		"cloud-native-software-package-red-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-red-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "data"]
+		},
+		"cloud-native-redis": {
+			"path": "/cloud-native-icons/cloud-native-redis.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "database", "cloud", "data-storage"]
+		},
+		"cloud-native-software-package-indigo-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-indigo-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-namespace": {
+			"path": "/cloud-native-icons/cloud-native-namespace.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["cloud-computing", "filled", "namespace", "software", "devops"]
+		},
+		"cloud-native-configuration-tone-sapphire": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-sapphire.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "configuration", "technology"]
+		},
+		"cloud-native-container-tone-metal": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-metal.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-software-package-teal-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-teal-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "cloud", "package", "filled", "technology"]
+		},
+		"cloud-native-aws-side": {
+			"path": "/cloud-native-icons/cloud-native-aws-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "aws", "technology", "infrastructure"]
+		},
+		"cloud-native-software-package-tone-magenta": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-magenta.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-ansible": {
+			"path": "/cloud-native-icons/cloud-native-ansible.svg",
+			"width": 61,
+			"height": 67,
+			"tags": ["software", "filled", "automation", "devops", "cloud-computing"]
+		},
+		"cloud-native-pod": {
+			"path": "/cloud-native-icons/cloud-native-pod.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "container", "kubernetes", "cloud-computing"]
+		},
+		"cloud-native-container-red-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-red-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-software-package-blue-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-blue-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "data"]
+		},
+		"cloud-native-debian": {
+			"path": "/cloud-native-icons/cloud-native-debian.svg",
+			"width": 91,
+			"height": 55,
+			"tags": ["software", "filled", "cloud", "debian", "operating-system"]
+		},
+		"cloud-native-integration-pipeline": {
+			"path": "/cloud-native-icons/cloud-native-integration-pipeline.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud-computing", "data-integration", "pipeline"]
+		},
+		"cloud-native-container-deconstructed": {
+			"path": "/cloud-native-icons/cloud-native-container-deconstructed.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "cloud-computing", "container", "architecture"]
+		},
+		"cloud-native-scheduler": {
+			"path": "/cloud-native-icons/cloud-native-scheduler.svg",
+			"width": 34,
+			"height": 37,
+			"tags": ["software", "filled", "cloud", "management", "scheduler"]
+		},
+		"cloud-native-software-package-deep-purple-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-deep-purple-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "package"]
+		},
+		"cloud-native-alfresco": {
+			"path": "/cloud-native-icons/cloud-native-alfresco.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "data-storage", "platform"]
+		},
+		"cloud-native-software-package-lime-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-lime-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-aws-front": {
+			"path": "/cloud-native-icons/cloud-native-aws-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["software", "filled", "cloud-computing", "architecture", "aws"]
+		},
+		"cloud-native-server-rack-ssd": {
+			"path": "/cloud-native-icons/cloud-native-server-rack-ssd.svg",
+			"width": 49,
+			"height": 114,
+			"tags": ["hardware", "filled", "server", "cloud-computing", "data-storage"]
+		},
+		"cloud-native-software-package-blue-gray-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-blue-gray-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-configuration-tone-raspberry": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-raspberry.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "configuration", "raspberry"]
+		},
+		"cloud-native-pvc": {
+			"path": "/cloud-native-icons/cloud-native-pvc.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "outline", "storage", "container", "cloud-computing"]
+		},
+		"cloud-native-pod-magenta": {
+			"path": "/cloud-native-icons/cloud-native-pod-magenta.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["cloud-computing", "filled", "container", "kubernetes", "technology"]
+		},
+		"cloud-native-container-indigo-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-indigo-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-storage-server-ssd": {
+			"path": "/cloud-native-icons/cloud-native-storage-server-ssd.svg",
+			"width": 49,
+			"height": 41,
+			"tags": ["hardware", "filled", "storage", "server", "cloud-computing"]
+		},
+		"cloud-native-digitalocean-front": {
+			"path": "/cloud-native-icons/cloud-native-digitalocean-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "logo", "technology", "platform"]
+		},
+		"cloud-native-containerd": {
+			"path": "/cloud-native-icons/cloud-native-containerd.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "container", "cloud-native", "devops"]
+		},
+		"cloud-native-pod-inside": {
+			"path": "/cloud-native-icons/cloud-native-pod-inside.svg",
+			"width": 63,
+			"height": 60,
+			"tags": ["cloud-computing", "filled", "container", "software", "devops"]
+		},
+		"cloud-native-code-tone-green": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-green.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-gcp-side": {
+			"path": "/cloud-native-icons/cloud-native-gcp-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "outline", "gcp", "technology", "software"]
+		},
+		"cloud-native-cloud-cyan-front": {
+			"path": "/cloud-native-icons/cloud-native-cloud-cyan-front.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "technology", "data-storage", "software"]
+		},
+		"cloud-native-azure-side": {
+			"path": "/cloud-native-icons/cloud-native-azure-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud-computing", "filled", "azure", "technology", "software"]
+		},
+		"cloud-native-code-tone-gray": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-gray.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-grafana": {
+			"path": "/cloud-native-icons/cloud-native-grafana.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["software", "filled", "monitoring", "data-visualization", "dashboard"]
+		},
+		"cloud-native-sniffer-dog-side": {
+			"path": "/cloud-native-icons/cloud-native-sniffer-dog-side.svg",
+			"width": 40,
+			"height": 54,
+			"tags": ["animal", "outline", "cloud-native", "monitoring", "dog"]
+		},
+		"cloud-native-configuration-tone-metal": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-metal.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "settings", "configuration"]
+		},
+		"cloud-native-folder": {
+			"path": "/cloud-native-icons/cloud-native-folder.svg",
+			"width": 25,
+			"height": 33,
+			"tags": ["software", "filled", "storage", "cloud", "data"]
+		},
+		"cloud-native-container-pink-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-pink-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-code-tone-carrot": {
+			"path": "/cloud-native-icons/cloud-native-code-tone-carrot.svg",
+			"width": 57,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "development", "programming"]
+		},
+		"cloud-native-conveyor-short-down-left": {
+			"path": "/cloud-native-icons/cloud-native-conveyor-short-down-left.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud-computing", "outline", "infrastructure", "data-transfer", "software"]
+		},
+		"cloud-native-kubelet": {
+			"path": "/cloud-native-icons/cloud-native-kubelet.svg",
+			"width": 34,
+			"height": 37,
+			"tags": ["software", "outline", "kubernetes", "container", "cloud-computing"]
+		},
+		"cloud-native-server-cube": {
+			"path": "/cloud-native-icons/cloud-native-server-cube.svg",
+			"width": 49,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "server", "data"]
+		},
+		"cloud-native-postgresql": {
+			"path": "/cloud-native-icons/cloud-native-postgresql.svg",
+			"width": 45,
+			"height": 52,
+			"tags": ["database", "software", "cloud", "filled", "postgresql"]
+		},
+		"cloud-native-container-teal-light": {
+			"path": "/cloud-native-icons/cloud-native-container-teal-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-node": {
+			"path": "/cloud-native-icons/cloud-native-node.svg",
+			"width": 49,
+			"height": 41,
+			"tags": ["software", "filled", "cloud-computing", "infrastructure", "network"]
+		},
+		"cloud-native-configuration-tone-petrol": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-petrol.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud-computing", "settings", "configuration"]
+		},
+		"cloud-native-container-deep-purple-dark": {
+			"path": "/cloud-native-icons/cloud-native-container-deep-purple-dark.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["software", "filled", "cloud", "container", "devops"]
+		},
+		"cloud-native-statefulset": {
+			"path": "/cloud-native-icons/cloud-native-statefulset.svg",
+			"width": 54,
+			"height": 32,
+			"tags": ["software", "outline", "cloud-computing", "kubernetes", "deployment"]
+		},
+		"cloud-native-documents": {
+			"path": "/cloud-native-icons/cloud-native-documents.svg",
+			"width": 45,
+			"height": 59,
+			"tags": ["software", "filled", "cloud", "documents", "data-storage"]
+		},
+		"cloud-native-configuration-tone-gray": {
+			"path": "/cloud-native-icons/cloud-native-configuration-tone-gray.svg",
+			"width": 37,
+			"height": 42,
+			"tags": ["software", "filled", "cloud", "settings", "configuration"]
+		},
+		"cloud-native-container-tone-emeraude": {
+			"path": "/cloud-native-icons/cloud-native-container-tone-emeraude.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "container", "technology"]
+		},
+		"cloud-native-software-package-tone-gray": {
+			"path": "/cloud-native-icons/cloud-native-software-package-tone-gray.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-software-package-purple-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-purple-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "technology", "data"]
+		},
+		"cloud-native-software-package-light-green-light": {
+			"path": "/cloud-native-icons/cloud-native-software-package-light-green-light.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["software", "filled", "cloud", "package", "technology"]
+		},
+		"cloud-native-container-light-green-light": {
+			"path": "/cloud-native-icons/cloud-native-container-light-green-light.svg",
+			"width": 57,
+			"height": 52,
+			"tags": ["cloud", "filled", "devops", "software", "container"]
+		},
+		"cloud-native-librairies": {
+			"path": "/cloud-native-icons/cloud-native-librairies.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["cloud", "filled", "software", "technology", "data-storage"]
+		},
+		"cloud-native-software-package-cyan-dark": {
+			"path": "/cloud-native-icons/cloud-native-software-package-cyan-dark.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["filled", "package", "software", "technology", "cloud-computing"]
+		},
+		"cloud-native-configmap": {
+			"path": "/cloud-native-icons/cloud-native-configmap.svg",
+			"width": 100,
+			"height": 100,
+			"tags": ["outline", "software", "cloud-native", "configuration", "data-management"]
+		},
+		"cloud-native-cloud-yellow-side": {
+			"path": "/cloud-native-icons/cloud-native-cloud-yellow-side.svg",
+			"width": 60,
+			"height": 64,
+			"tags": ["cloud", "yellow", "outline", "abstract", "technology"]
+		}
+	}
+}
